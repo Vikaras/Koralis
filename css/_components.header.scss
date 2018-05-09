@@ -1,15 +1,22 @@
 #header-nav {
+  display: flex;
   width: 100%;
   background:$nav-color;
   margin-top: 62px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  border-bottom: 1px solid $border-color;
+  border-bottom: $header-border;
 
   .logo-wrap {
     width: 6.5%;
     .company-logo {
       margin: 30px 40px;
     }
+  }
+
+  .nav-wrap {
+    width: 73.5%;
+    border-left: $header-border;
+    border-right: $header-border;
   }
 }
