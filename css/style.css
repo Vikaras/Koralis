@@ -44,8 +44,19 @@ body {
     #header-nav .logo-wrap .company-logo {
       margin: 30px 40px; }
   #header-nav .nav-wrap {
+    display: flex;
     width: 73.5%;
     border-left: 1px solid #eaebf0;
     border-right: 1px solid #eaebf0; }
+    #header-nav .nav-wrap .nav-search {
+      margin: 36px 0 33px 40px; }
+      #header-nav .nav-wrap .nav-search .fa-search {
+        font-size: 27px;
+        color: #c5c5da; }
+      #header-nav .nav-wrap .nav-search .input-search {
+        font-size: 16px;
+        color: #aab8c7;
+        margin-left: 25px;
+        border: none; }
 
 /*# sourceMappingURL=style.css.map */

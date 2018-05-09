@@ -15,8 +15,25 @@
   }
 
   .nav-wrap {
+    display: flex;
     width: 73.5%;
     border-left: $header-border;
     border-right: $header-border;
+
+    .nav-search {
+      margin: 36px 0 33px 40px;
+
+      .fa-search {
+        font-size: 27px;
+        color: #c5c5da;
+      }
+
+      .input-search {
+        font-size: $text-size;
+        color: #aab8c7;
+        margin-left: 25px;
+        border: none;
+      }
+    }
   }
 }
