@@ -3,3 +3,21 @@
   width: 100%;
   margin: 0 auto;
 }
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.column {
+  width: 80%;
+
+  &.one-fifth {
+    width: 20%;
+  }
+}

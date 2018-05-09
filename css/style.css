@@ -17,4 +17,30 @@ body {
   width: 100%;
   margin: 0 auto; }
 
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 100%; }
+
+.column {
+  width: 80%; }
+  .column.one-fifth {
+    width: 20%; }
+
+#header-nav {
+  width: 100%;
+  background: #ffffff;
+  margin-top: 62px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom: 1px solid #eaebf0; }
+  #header-nav .logo-wrap {
+    width: 6.5%; }
+    #header-nav .logo-wrap .company-logo {
+      margin: 30px 40px; }
+
 /*# sourceMappingURL=style.css.map */
