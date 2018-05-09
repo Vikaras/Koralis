@@ -1,3 +1,5 @@
-@import "settings";
-@import "elements";
-@import "components";
+.container {
+  max-width: 1730px;
+  width: 100%;
+  margin: 0 auto;
+}
