@@ -10,6 +10,7 @@ body {
   min-height: 100%;
   position: relative;
   font-family: "DIN", sans-serif;
+  color: #000;
   background-color: #e7e7f3; }
 
 ul {
@@ -19,6 +20,9 @@ ul {
 
 a {
   text-decoration: none; }
+
+p {
+  margin: 0; }
 
 .container {
   max-width: 1730px;
@@ -104,5 +108,22 @@ a {
           position: relative; }
           #header-nav .nav-wrap .nav-actions .nav-actions-list .nav-actions-list-item .nav-actions-list-link .nav-actions-img {
             display: block; }
+  #header-nav .nav-user-wrap {
+    display: flex;
+    width: 20%; }
+    #header-nav .nav-user-wrap .nav-user-text {
+      margin: 28px 20px 41px 47px; }
+    #header-nav .nav-user-wrap .nav-user-img {
+      margin: 19px 26px 19px 20px; }
+    #header-nav .nav-user-wrap .nav-user-status {
+      position: relative; }
+      #header-nav .nav-user-wrap .nav-user-status::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-top: 12px solid #c5c5da; }
 
 /*# sourceMappingURL=style.css.map */

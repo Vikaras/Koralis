@@ -99,4 +99,36 @@
       }
     }
   }
+
+  .nav-user-wrap {
+    display: flex;
+    width: 20%;
+
+    .nav-user-text {
+      margin: 28px 20px 41px 47px;
+
+      .nav-user-info {
+
+      }
+    }
+
+    .nav-user-img {
+      margin: 19px 26px 19px 20px;
+    }
+
+    .nav-user-status {
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-top: 12px solid #c5c5da;
+      }
+      //margin: 43px 43px 44px 26px;
+    }
+  }
 }

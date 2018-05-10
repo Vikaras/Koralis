@@ -12,6 +12,7 @@ body {
   min-height: 100%;
   position: relative;
   font-family: $text;
+  color: #000;
   background-color: $body-color;
 }
 
@@ -24,4 +25,9 @@ ul {
 a {
   text-decoration: none;
 }
+
+p {
+  margin: 0;
+}
+
 
