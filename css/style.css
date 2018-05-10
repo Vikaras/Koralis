@@ -12,6 +12,14 @@ body {
   font-family: "DIN-regular", sans-serif;
   background-color: #e7e7f3; }
 
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
 .container {
   max-width: 1730px;
   width: 100%;
@@ -58,5 +66,9 @@ body {
         color: #aab8c7;
         margin-left: 25px;
         border: none; }
+      #header-nav .nav-wrap .nav-search .nav-menu .nav-list {
+        text-align: center; }
+        #header-nav .nav-wrap .nav-search .nav-menu .nav-list .nav-list-item {
+          display: inline-block; }
 
 /*# sourceMappingURL=style.css.map */

@@ -34,6 +34,17 @@
         margin-left: 25px;
         border: none;
       }
+
+      .nav-menu {
+
+        .nav-list {
+          text-align: center;
+
+          .nav-list-item {
+            display: inline-block;
+          }
+        }
+      }
     }
   }
 }
