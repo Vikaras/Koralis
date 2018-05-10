@@ -32,7 +32,8 @@
         font-family: $text;
         font-size: $text-size;
         color: #aab8c7;
-        margin: 38px 272px 31px 0;
+        margin: 38px 224px 31px 0;
+        padding: 0;
         border: none;
       }
     }
@@ -52,6 +53,7 @@
 
           .nav-list-item-link {
             font-size: $text-size;
+            line-height: 32px;
             color: #2e3948;
             padding: 30px 20px;
 
@@ -70,6 +72,27 @@
 
             &:hover::after {
               opacity: 1;
+            }
+          }
+        }
+      }
+    }
+
+    .nav-actions {
+      margin: 34px 50px 35px 210px;
+
+      .nav-actions-list {
+        text-align: center;
+        font-size: 0;
+
+        .nav-actions-list-item {
+          display: inline-block;
+          position: relative;
+
+          .nav-actions-list-link {
+
+            .nav-actions-img {
+              display: block;
             }
           }
         }
