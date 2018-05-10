@@ -39,7 +39,7 @@
     }
 
     .nav-menu {
-      margin: 36px 0 33px;
+      margin: 36px 0 0;
 
       .nav-list {
         text-align: center;
@@ -49,13 +49,13 @@
         .nav-list-item {
           display: inline-block;
           position: relative;
-          padding-bottom: 30px;
+          padding-bottom: 33px;
 
-          .nav-list-item-link {
+          .nav-list-link {
             font-size: $text-size;
             line-height: 32px;
             color: #2e3948;
-            padding: 30px 20px;
+            padding: 33px 20px;
 
             &::after {
               height: 3px;
@@ -74,12 +74,24 @@
               opacity: 1;
             }
           }
+
+          &:nth-child(5) .nav-list-link {
+            padding: 0;
+
+            &::after {
+              content: none;
+            }
+          }
+
+        }
+        & li:last-child {
+          padding-bottom: 0;
         }
       }
     }
 
     .nav-actions {
-      margin: 34px 50px 35px 210px;
+      margin: 34px 30px 35px 170px;
 
       .nav-actions-list {
         text-align: center;
@@ -92,6 +104,7 @@
           .nav-actions-list-link {
 
             .nav-actions-img {
+              padding: 0 20px;
               display: block;
             }
           }
@@ -108,7 +121,7 @@
       margin: 28px 20px 41px 47px;
 
       .nav-user-info {
-
+        line-height: 32px;
       }
     }
 
@@ -116,19 +129,19 @@
       margin: 19px 26px 19px 20px;
     }
 
-    .nav-user-status {
-      position: relative;
-
-      &::after {
-        content: '';
-        position: absolute;
-        width: 0;
-        height: 0;
-        border-left: 6px solid transparent;
-        border-right: 6px solid transparent;
-        border-top: 12px solid #c5c5da;
-      }
-      //margin: 43px 43px 44px 26px;
-    }
+    //.nav-user-status {
+    //  position: relative;
+    //
+    //  &::after {
+    //    content: '';
+    //    position: absolute;
+    //    width: 0;
+    //    height: 0;
+    //    border-left: 6px solid transparent;
+    //    border-right: 6px solid transparent;
+    //    border-top: 12px solid #c5c5da;
+    //  }
+    //  //margin: 43px 43px 44px 26px;
+    //}
   }
 }

@@ -72,20 +72,20 @@ p {
       padding: 0;
       border: none; }
     #header-nav .nav-wrap .nav-menu {
-      margin: 36px 0 33px; }
+      margin: 36px 0 0; }
       #header-nav .nav-wrap .nav-menu .nav-list {
         text-align: center;
         font-size: 0; }
         #header-nav .nav-wrap .nav-menu .nav-list .nav-list-item {
           display: inline-block;
           position: relative;
-          padding-bottom: 30px; }
-          #header-nav .nav-wrap .nav-menu .nav-list .nav-list-item .nav-list-item-link {
+          padding-bottom: 33px; }
+          #header-nav .nav-wrap .nav-menu .nav-list .nav-list-item .nav-list-link {
             font-size: 16px;
             line-height: 32px;
             color: #2e3948;
-            padding: 30px 20px; }
-            #header-nav .nav-wrap .nav-menu .nav-list .nav-list-item .nav-list-item-link::after {
+            padding: 33px 20px; }
+            #header-nav .nav-wrap .nav-menu .nav-list .nav-list-item .nav-list-link::after {
               height: 3px;
               content: '';
               position: absolute;
@@ -96,10 +96,16 @@ p {
               right: 20px;
               left: 20px;
               transition: opacity .3s; }
-            #header-nav .nav-wrap .nav-menu .nav-list .nav-list-item .nav-list-item-link:hover::after {
+            #header-nav .nav-wrap .nav-menu .nav-list .nav-list-item .nav-list-link:hover::after {
               opacity: 1; }
+          #header-nav .nav-wrap .nav-menu .nav-list .nav-list-item:nth-child(5) .nav-list-link {
+            padding: 0; }
+            #header-nav .nav-wrap .nav-menu .nav-list .nav-list-item:nth-child(5) .nav-list-link::after {
+              content: none; }
+        #header-nav .nav-wrap .nav-menu .nav-list li:last-child {
+          padding-bottom: 0; }
     #header-nav .nav-wrap .nav-actions {
-      margin: 34px 50px 35px 210px; }
+      margin: 34px 30px 35px 170px; }
       #header-nav .nav-wrap .nav-actions .nav-actions-list {
         text-align: center;
         font-size: 0; }
@@ -107,23 +113,16 @@ p {
           display: inline-block;
           position: relative; }
           #header-nav .nav-wrap .nav-actions .nav-actions-list .nav-actions-list-item .nav-actions-list-link .nav-actions-img {
+            padding: 0 20px;
             display: block; }
   #header-nav .nav-user-wrap {
     display: flex;
     width: 20%; }
     #header-nav .nav-user-wrap .nav-user-text {
       margin: 28px 20px 41px 47px; }
+      #header-nav .nav-user-wrap .nav-user-text .nav-user-info {
+        line-height: 32px; }
     #header-nav .nav-user-wrap .nav-user-img {
       margin: 19px 26px 19px 20px; }
-    #header-nav .nav-user-wrap .nav-user-status {
-      position: relative; }
-      #header-nav .nav-user-wrap .nav-user-status::after {
-        content: '';
-        position: absolute;
-        width: 0;
-        height: 0;
-        border-left: 6px solid transparent;
-        border-right: 6px solid transparent;
-        border-top: 12px solid #c5c5da; }
 
 /*# sourceMappingURL=style.css.map */
