@@ -9,7 +9,7 @@ body {
   padding: 0;
   min-height: 100%;
   position: relative;
-  font-family: "DIN-regular", sans-serif;
+  font-family: "DIN", sans-serif;
   background-color: #e7e7f3; }
 
 ul {
@@ -50,25 +50,47 @@ a {
   #header-nav .logo-wrap {
     width: 6.5%; }
     #header-nav .logo-wrap .company-logo {
-      margin: 30px 40px; }
+      margin: 32px 41px 28px 39px; }
   #header-nav .nav-wrap {
     display: flex;
     width: 73.5%;
     border-left: 1px solid #eaebf0;
     border-right: 1px solid #eaebf0; }
-    #header-nav .nav-wrap .nav-search {
-      margin: 36px 0 33px 40px; }
-      #header-nav .nav-wrap .nav-search .fa-search {
-        font-size: 27px;
-        color: #c5c5da; }
-      #header-nav .nav-wrap .nav-search .input-search {
-        font-size: 16px;
-        color: #aab8c7;
-        margin-left: 25px;
-        border: none; }
-      #header-nav .nav-wrap .nav-search .nav-menu .nav-list {
-        text-align: center; }
-        #header-nav .nav-wrap .nav-search .nav-menu .nav-list .nav-list-item {
-          display: inline-block; }
+    #header-nav .nav-wrap .nav-search .fa-search {
+      margin: 34px 25px 32px 40px;
+      font-size: 27px;
+      color: #c5c5da; }
+    #header-nav .nav-wrap .nav-search .input-search {
+      font-family: "DIN", sans-serif;
+      font-size: 16px;
+      color: #aab8c7;
+      margin: 38px 272px 31px 0;
+      border: none; }
+    #header-nav .nav-wrap .nav-menu {
+      margin: 36px 0 33px; }
+      #header-nav .nav-wrap .nav-menu .nav-list {
+        text-align: center;
+        font-size: 0; }
+        #header-nav .nav-wrap .nav-menu .nav-list .nav-list-item {
+          display: inline-block;
+          position: relative;
+          padding-bottom: 30px; }
+          #header-nav .nav-wrap .nav-menu .nav-list .nav-list-item .nav-list-item-link {
+            font-size: 16px;
+            color: #2e3948;
+            padding: 30px 20px; }
+            #header-nav .nav-wrap .nav-menu .nav-list .nav-list-item .nav-list-item-link::after {
+              height: 3px;
+              content: '';
+              position: absolute;
+              display: block;
+              background: #f3333e;
+              bottom: 0;
+              opacity: 0;
+              right: 20px;
+              left: 20px;
+              transition: opacity .3s; }
+            #header-nav .nav-wrap .nav-menu .nav-list .nav-list-item .nav-list-item-link:hover::after {
+              opacity: 1; }
 
 /*# sourceMappingURL=style.css.map */

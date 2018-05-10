@@ -1,7 +1,7 @@
 #header-nav {
   display: flex;
   width: 100%;
-  background:$nav-color;
+  background: $nav-color;
   margin-top: 62px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -10,7 +10,7 @@
   .logo-wrap {
     width: 6.5%;
     .company-logo {
-      margin: 30px 40px;
+      margin: 32px 41px 28px 39px;
     }
   }
 
@@ -21,27 +21,56 @@
     border-right: $header-border;
 
     .nav-search {
-      margin: 36px 0 33px 40px;
 
       .fa-search {
+        margin: 34px 25px 32px 40px;
         font-size: 27px;
         color: #c5c5da;
       }
 
       .input-search {
+        font-family: $text;
         font-size: $text-size;
         color: #aab8c7;
-        margin-left: 25px;
+        margin: 38px 272px 31px 0;
         border: none;
       }
+    }
 
-      .nav-menu {
+    .nav-menu {
+      margin: 36px 0 33px;
 
-        .nav-list {
-          text-align: center;
+      .nav-list {
+        text-align: center;
+        font-size: 0;
+        //removing whitespace
 
-          .nav-list-item {
-            display: inline-block;
+        .nav-list-item {
+          display: inline-block;
+          position: relative;
+          padding-bottom: 30px;
+
+          .nav-list-item-link {
+            font-size: $text-size;
+            color: #2e3948;
+            padding: 30px 20px;
+
+            &::after {
+              height: 3px;
+              content: '';
+              position: absolute;
+              display: block;
+              background: #f3333e;
+              bottom: 0;
+              opacity: 0;
+              right: 20px;
+              left: 20px;
+              transition: opacity .3s;
+            }
+
+            &:hover::after {
+              opacity: 1;
+            }
           }
         }
       }
