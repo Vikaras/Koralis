@@ -108,13 +108,13 @@ p {
           width: 12px;
           height: 6px; }
     #header-nav .nav-wrap .nav-actions {
-      margin: 34px 30px 35px 150px; }
+      position: relative;
+      margin: 34px 33px 35px 170px; }
       #header-nav .nav-wrap .nav-actions .nav-actions-list {
         text-align: center;
         font-size: 0; }
         #header-nav .nav-wrap .nav-actions .nav-actions-list .nav-actions-list-item {
-          display: inline-block;
-          position: relative; }
+          display: inline-block; }
           #header-nav .nav-wrap .nav-actions .nav-actions-list .nav-actions-list-item .nav-actions-list-link .nav-actions-img {
             padding: 0 20px;
             display: block; }
