@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'dinbold';
-  src: url("../fonts/DINBold.ttf") format("ttf");
+  src: url("../fonts/din_bold-webfont.woff2") format("woff2"), url("../fonts/din_bold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'dinregular';
-  src: url("../fonts/DIN.ttf") format("ttf");
+  src: url("../fonts/din-webfont.woff2") format("woff2"), url("../fonts/din-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 * {
@@ -64,24 +64,28 @@ p {
   #header-nav .logo-wrap {
     width: 6.5%; }
     #header-nav .logo-wrap .company-logo {
-      margin: 32px 41px 28px 39px; }
+      padding: 32px 41px 28px 39px; }
   #header-nav .nav-wrap {
     display: flex;
     width: 73.5%;
     border-left: 1px solid #eaebf0;
     border-right: 1px solid #eaebf0; }
-    #header-nav .nav-wrap .nav-search .fa-search {
-      margin: 34px 25px 32px 40px;
-      font-size: 27px;
-      color: #c5c5da; }
-    #header-nav .nav-wrap .nav-search .input-search {
-      font-family: "dinregular", sans-serif;
-      font-size: 16px;
-      color: #aab8c7;
-      margin: 38px 224px 31px 0;
-      padding: 0;
-      border: none; }
+    #header-nav .nav-wrap .nav-search {
+      width: 38.8%; }
+      #header-nav .nav-wrap .nav-search .fa-search {
+        margin: 34px 0 32px 40px;
+        font-size: 27px;
+        color: #c5c5da; }
+      #header-nav .nav-wrap .nav-search .input-search {
+        font-family: "dinregular", sans-serif;
+        font-size: 16px;
+        color: #aab8c7;
+        margin: 15px 0 8px;
+        padding: 25px;
+        border: none;
+        outline: none; }
     #header-nav .nav-wrap .nav-menu {
+      width: 28.7%;
       position: relative;
       margin: 36px 0 0; }
       #header-nav .nav-wrap .nav-menu .nav-list {
@@ -118,8 +122,8 @@ p {
           width: 12px;
           height: 6px; }
     #header-nav .nav-wrap .nav-actions {
-      position: relative;
-      margin: 34px 33px 35px 170px; }
+      width: 32.5%;
+      position: relative; }
       #header-nav .nav-wrap .nav-actions .nav-actions-list {
         text-align: center;
         font-size: 0; }
