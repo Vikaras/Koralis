@@ -9,7 +9,7 @@ body {
   padding: 0;
   min-height: 100%;
   position: relative;
-  font-family: "DIN", sans-serif;
+  font-family: "dinregular", sans-serif;
   color: #000;
   background-color: #e7e7f3; }
 
@@ -65,7 +65,7 @@ p {
       font-size: 27px;
       color: #c5c5da; }
     #header-nav .nav-wrap .nav-search .input-search {
-      font-family: "DIN", sans-serif;
+      font-family: "dinregular", sans-serif;
       font-size: 16px;
       color: #aab8c7;
       margin: 38px 224px 31px 0;
@@ -118,6 +118,19 @@ p {
           #header-nav .nav-wrap .nav-actions .nav-actions-list .nav-actions-list-item .nav-actions-list-link .nav-actions-img {
             padding: 0 20px;
             display: block; }
+      #header-nav .nav-wrap .nav-actions .notify-light {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background: #f3333e;
+        border-radius: 50%;
+        border: 3px solid #ffffff;
+        top: -9px;
+        left: 30px; }
+        #header-nav .nav-wrap .nav-actions .notify-light .notify-count {
+          font-size: 12px;
+          color: #ffffff;
+          font-family: "dinbold", sans-serif; }
   #header-nav .nav-user-wrap {
     display: flex;
     width: 20%; }
