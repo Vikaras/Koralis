@@ -97,11 +97,15 @@
     .nav-actions {
       width: 31.7%;
       position: relative;
-      //margin: 34px 33px 35px 170px;
+      margin-top: 14px;
+      padding-right: 31px;
 
       .nav-actions-list {
-        text-align: center;
         font-size: 0;
+        float: right;
+        content: '';
+        display: block;
+        clear: both;
 
         .nav-actions-list-item {
           display: inline-block;
@@ -117,15 +121,17 @@
 
       .notify-light {
         position: absolute;
-        width: 20px;
-        height: 20px;
+        width: 26px;
+        height: 26px;
         background: #f3333e;
         border-radius: 50%;
         border: 3px solid #ffffff;
-        top: -9px;
-        left: 30px;
+        top: 9px;
+        left: 207px;
 
         .notify-count{
+          text-align: center;
+          line-height: 20px;
           font-size: 12px;
           color: #ffffff;
           font-family: $text-bold;
