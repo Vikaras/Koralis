@@ -89,10 +89,9 @@ img {
         outline: none; }
     #header-nav .nav-wrap .nav-menu {
       width: 31.9%;
-      position: relative; }
+      position: relative;
+      margin-top: 40px; }
       #header-nav .nav-wrap .nav-menu .nav-list {
-        margin-top: 40px;
-        text-align: center;
         font-size: 0; }
         #header-nav .nav-wrap .nav-menu .nav-list .nav-list-item {
           display: inline-block;
@@ -117,7 +116,7 @@ img {
               opacity: 1; }
       #header-nav .nav-wrap .nav-menu .drop-drive {
         position: absolute;
-        top: 37px;
+        top: -4px;
         right: 0; }
         #header-nav .nav-wrap .nav-menu .drop-drive .drop-icon {
           color: #c5c5da;
@@ -146,7 +145,7 @@ img {
         border-radius: 50%;
         border: 3px solid #ffffff;
         top: 9px;
-        left: 207px; }
+        left: calc(50% + 6px); }
         #header-nav .nav-wrap .nav-actions .notify-light .notify-count {
           text-align: center;
           line-height: 20px;

@@ -44,10 +44,9 @@
     .nav-menu {
       width: 31.9%;
       position: relative;
+      margin-top: 40px;
 
       .nav-list {
-        margin-top: 40px;
-        text-align: center;
         font-size: 0;
         //removing whitespace
 
@@ -83,7 +82,7 @@
 
       .drop-drive {
         position: absolute;
-        top: 37px;
+        top: -4px;
         right: 0;
 
         .drop-icon {
@@ -127,7 +126,7 @@
         border-radius: 50%;
         border: 3px solid #ffffff;
         top: 9px;
-        left: 207px;
+        left: calc(50% + 6px);
 
         .notify-count{
           text-align: center;
