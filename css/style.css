@@ -34,6 +34,9 @@ a {
 p {
   margin: 0; }
 
+img {
+  display: block; }
+
 .container {
   max-width: 1730px;
   width: 100%;
@@ -58,37 +61,37 @@ p {
   width: 100%;
   background: #ffffff;
   margin-top: 62px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
   border-bottom: 1px solid #eaebf0; }
   #header-nav .logo-wrap {
     width: 6.5%; }
     #header-nav .logo-wrap .company-logo {
-      padding: 32px 41px 28px 39px; }
+      padding: 32px 41px 27px 39px; }
   #header-nav .nav-wrap {
     display: flex;
     width: 73.5%;
     border-left: 1px solid #eaebf0;
     border-right: 1px solid #eaebf0; }
     #header-nav .nav-wrap .nav-search {
-      width: 38.8%; }
+      width: 36.6%; }
       #header-nav .nav-wrap .nav-search .fa-search {
-        margin: 34px 0 32px 40px;
+        margin: 34px 0 31px 40px;
         font-size: 27px;
         color: #c5c5da; }
       #header-nav .nav-wrap .nav-search .input-search {
         font-family: "dinregular", sans-serif;
         font-size: 16px;
         color: #aab8c7;
-        margin: 15px 0 8px;
+        margin: 15px 0 7px;
         padding: 25px;
         border: none;
         outline: none; }
     #header-nav .nav-wrap .nav-menu {
-      width: 28.7%;
-      position: relative;
-      margin: 36px 0 0; }
+      width: 31.9%;
+      position: relative; }
       #header-nav .nav-wrap .nav-menu .nav-list {
+        margin-top: 40px;
         text-align: center;
         font-size: 0; }
         #header-nav .nav-wrap .nav-menu .nav-list .nav-list-item {
@@ -97,7 +100,6 @@ p {
           padding-bottom: 33px; }
           #header-nav .nav-wrap .nav-menu .nav-list .nav-list-item .nav-list-link {
             font-size: 16px;
-            line-height: 32px;
             color: #2e3948;
             padding: 33px 20px; }
             #header-nav .nav-wrap .nav-menu .nav-list .nav-list-item .nav-list-link::after {
@@ -115,14 +117,14 @@ p {
               opacity: 1; }
       #header-nav .nav-wrap .nav-menu .drop-drive {
         position: absolute;
-        top: 3px;
+        top: 37px;
         right: 0; }
         #header-nav .nav-wrap .nav-menu .drop-drive .drop-icon {
           color: #c5c5da;
           width: 12px;
           height: 6px; }
     #header-nav .nav-wrap .nav-actions {
-      width: 32.5%;
+      width: 31.7%;
       position: relative; }
       #header-nav .nav-wrap .nav-actions .nav-actions-list {
         text-align: center;
@@ -130,8 +132,7 @@ p {
         #header-nav .nav-wrap .nav-actions .nav-actions-list .nav-actions-list-item {
           display: inline-block; }
           #header-nav .nav-wrap .nav-actions .nav-actions-list .nav-actions-list-item .nav-actions-list-link .nav-actions-img {
-            padding: 0 20px;
-            display: block; }
+            padding: 20px; }
       #header-nav .nav-wrap .nav-actions .notify-light {
         position: absolute;
         width: 20px;
@@ -148,11 +149,7 @@ p {
   #header-nav .nav-user-wrap {
     display: flex;
     width: 20%; }
-    #header-nav .nav-user-wrap .nav-user-text {
-      margin: 28px 20px 41px 47px; }
-      #header-nav .nav-user-wrap .nav-user-text .nav-user-info {
-        line-height: 32px; }
-    #header-nav .nav-user-wrap .nav-user-img {
-      margin: 19px 26px 19px 20px; }
+    #header-nav .nav-user-wrap .nav-user-text .nav-user-info {
+      line-height: 32px; }
 
 /*# sourceMappingURL=style.css.map */
