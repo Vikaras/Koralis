@@ -42,6 +42,9 @@ img {
   width: 100%;
   margin: 0 auto; }
 
+.fas {
+  line-height: 6px !important; }
+
 .row {
   display: flex;
   flex-direction: row;
@@ -175,5 +178,11 @@ img {
         font-size: 14px;
         color: #a9b7c6;
         text-align: right; }
+    #header-nav .nav-user-wrap .nav-user-img {
+      margin: 19px 0; }
+    #header-nav .nav-user-wrap .nav-user-status {
+      line-height: 6px;
+      margin: 43px 0;
+      padding: 0 26px; }
 
 /*# sourceMappingURL=style.css.map */

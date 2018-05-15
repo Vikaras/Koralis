@@ -162,11 +162,16 @@
         color: #a9b7c6;
         text-align: right;
       }
-
     }
 
     .nav-user-img {
-      //margin: 19px 26px 19px 20px;
+      margin: 19px 0;
+    }
+
+    .nav-user-status {
+      line-height: 6px;
+      margin: 43px 0 ;
+      padding: 0 26px;
     }
   }
 }
