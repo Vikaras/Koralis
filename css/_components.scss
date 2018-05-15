@@ -26,8 +26,16 @@
   }
 }
 
-.drop-icon {
+.dropdown-icon {
   color: #c5c5da;
   width: 12px;
   height: 6px;
+}
+
+.dropdown-btn {
+  font-size: $text-size;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }

@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css"
           integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
@@ -11,45 +12,57 @@
 <div class="container">
     <header id="header-nav">
         <div class="logo-wrap">
-            <a href="https://www.koralis.lt/"><img src="img/logo.png" alt="Company Logo" class="company-logo"></a>
+            <a href="https://www.koralis.lt/" class="logo-link"><img src="img/logo.png" alt="Company Logo"></a>
         </div>
         <div class="nav-wrap">
             <div class="nav-search">
-                <span class="fa fa-search"></span><input type="text" placeholder="General search" class="input-search">
+                <form action="#" class="nav-search-form">
+                    <span class="fa fa-search"></span><input type="text" placeholder="General search"
+                                                             class="input-search">
+                </form>
             </div>
             <div class="nav-menu">
                 <ul class="nav-list">
                     <li class="nav-list-item"><a href="#" class="nav-list-link">Storyline</a></li>
                     <li class="nav-list-item"><a href="#" class="nav-list-link">Calendar</a></li>
                     <li class="nav-list-item"><a href="#" class="nav-list-link">Dashboard</a></li>
-                    <li class="nav-list-item"><a href="#" class="nav-list-link">Drive</a></li>
+                    <li class="nav-list-item"><a href="#" class="nav-list-link">Drive</a>
+                        <div class="dropdown-drive">
+                            <button class="dropdown-btn"><i class="fas fa-caret-down dropdown-icon"></i></button>
+                        </div>
+                    </li>
                 </ul>
-                <div class="drop-drive">
-                    <span class="fas fa-caret-down drop-icon"></span>
-                </div>
             </div>
             <div class="nav-actions">
                 <ul class="nav-actions-list">
-                    <li class="nav-actions-list-item"><a href="#" class="nav-actions-list-link"><img class="nav-actions-img" src="img/comment.png" alt="Comments"></a></li>
-                    <li class="nav-actions-list-item"><a href="#" class="nav-actions-list-link"><img class="nav-actions-img" src="img/user.png" alt="Users"></a></li>
-                    <li class="nav-actions-list-item"><a href="#" class="nav-actions-list-link"><img class="nav-actions-img" src="img/favorite.png" alt="Favorite"></a></li>
+                    <li class="nav-actions-list-item">
+                        <a href="#" class="nav-actions-list-link"><img
+                                class="nav-actions-img" src="img/message.png" alt="Messages"></a>
+                        <!--Notification is ready-->
+                        <div class="notify-light">
+                            <p class="notify-count">12</p>
+                        </div>
+                    </li>
+                    <li class="nav-actions-list-item"><a href="#" class="nav-actions-list-link"><img
+                            class="nav-actions-img" src="img/user.png" alt="Users"></a></li>
+                    <li class="nav-actions-list-item"><a href="#" class="nav-actions-list-link"><img
+                            class="nav-actions-img" src="img/favorite.png" alt="Favorite"></a></li>
                 </ul>
-                <div class="notify-light">
-                    <p class="notify-count">12</p>
-                </div>
-              </div>
+            </div>
         </div>
         <div class="nav-user-wrap">
-            <div class="nav-user-text">
-                <p class="nav-user-info">Darius Mikalauskas</p>
-                <div class="status-light"></div>
-                <p class="status-text">Do not disturb</p>
+            <div class="nav-user-details">
+                <p class="nav-user-name">Darius Mikalauskas</p>
+                <div class="nav-user-status nav-user-status-do-not-disturb">
+                    <p class="status-text">Do not disturb</p>
+                    <div class="status-light"></div>
+                </div>
             </div>
             <div class="nav-user-img">
                 <img src="img/nav-user.png" alt="User Image">
             </div>
-            <div class="nav-user-status">
-                    <span class="fas fa-caret-down drop-icon"></span>
+            <div class="nav-user-drop">
+                <button class="dropdown-btn"><i class="fas fa-caret-down dropdown-icon"></i></button>
             </div>
         </div>
     </header>
