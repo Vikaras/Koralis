@@ -1,15 +1,15 @@
 .four-fifths {
-  background:$main-color;
+  background: $main-color;
 
   .calendar-wrap {
     margin: 41px 0 16px;
-    padding: 0 20px 0 19px;
+    padding: 0 21px 0 20px;
 
     .calendar-menu-wrap {
       display: flex;
 
       .calendar-heading {
-        width: 418px;
+        width: 415px;
         font-size: 36px;
         color: #000000;
       }
@@ -19,15 +19,31 @@
         background: #ffffff;
 
         .calendar-list {
-          //font-size: 0;
+          font-size: 0;
 
           .calendar-list-item {
             display: inline-block;
-            padding: 14px 0 11px;
 
             .calendar-list-link {
+              display: block;
               font-size: $text-size;
               color: #3d5477;
+            }
+
+            &:nth-child(1) .calendar-list-link {
+              padding: 14px 35px 11px 42px;
+            }
+
+            &:nth-child(2) .calendar-list-link {
+              padding: 14px 40px 11px 35px;
+            }
+
+            &:nth-child(3) .calendar-list-link {
+              padding: 14px 47px 11px 48px;
+            }
+
+            &:nth-child(4) .calendar-list-link {
+              padding: 14px 52px 11px 40px;
             }
           }
         }

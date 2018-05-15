@@ -23,7 +23,7 @@
     border-right: $header-border;
 
     .nav-search {
-      width: 464px;
+      width: 473px;
       margin: 15px 0 7px;
       padding-left: 40px;
 
@@ -46,6 +46,7 @@
     }
 
     .nav-menu {
+      width: 405px;
       margin-top: 40px;
 
       //removing whitespace
@@ -89,7 +90,7 @@
     }
 
     .nav-actions {
-      width: 403px;
+      width: 393px;
       margin-top: 14px;
       padding-right: 31px;
 
@@ -137,7 +138,7 @@
 
     .nav-user-details {
       margin-top: 30px;
-      padding: 0 20px 0 47px;
+      padding: 0 20px 0 48px;
 
       .nav-user-name {
         font-size: $text-size;
@@ -172,7 +173,7 @@
     .nav-user-drop {
       line-height: 6px;
       margin: 36px 0;
-      padding: 0 26px;
+      padding: 0 35px 0 18px;
     }
   }
 }
