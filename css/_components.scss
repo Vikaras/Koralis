@@ -8,23 +8,6 @@
   line-height: 6px !important;
 }
 
-.row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  width: 100%;
-}
-
-.column {
-  width: 80%;
-
-  &.one-fifth {
-    width: 20%;
-  }
-}
 
 .dropdown-icon {
   color: #c5c5da;
@@ -38,4 +21,18 @@
   border: none;
   outline: none;
   cursor: pointer;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.one-fifth {
+ width: 344px;
 }
