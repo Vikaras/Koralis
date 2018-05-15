@@ -56,6 +56,11 @@ img {
   .column.one-fifth {
     width: 20%; }
 
+.drop-icon {
+  color: #c5c5da;
+  width: 12px;
+  height: 6px; }
+
 #header-nav {
   display: flex;
   width: 100%;
@@ -118,10 +123,6 @@ img {
         position: absolute;
         top: -4px;
         right: 0; }
-        #header-nav .nav-wrap .nav-menu .drop-drive .drop-icon {
-          color: #c5c5da;
-          width: 12px;
-          height: 6px; }
     #header-nav .nav-wrap .nav-actions {
       width: 31.7%;
       position: relative;
@@ -155,7 +156,24 @@ img {
   #header-nav .nav-user-wrap {
     display: flex;
     width: 20%; }
-    #header-nav .nav-user-wrap .nav-user-text .nav-user-info {
-      line-height: 32px; }
+    #header-nav .nav-user-wrap .nav-user-text {
+      position: relative;
+      margin-top: 30px;
+      padding: 0 20px 0 47px; }
+      #header-nav .nav-user-wrap .nav-user-text .nav-user-info {
+        font-size: 16px;
+        color: #000000; }
+      #header-nav .nav-user-wrap .nav-user-text .status-light {
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        background: #f3343e;
+        border-radius: 50%;
+        top: 23px;
+        right: calc(100% - 95px); }
+      #header-nav .nav-user-wrap .nav-user-text .status-text {
+        font-size: 14px;
+        color: #a9b7c6;
+        text-align: right; }
 
 /*# sourceMappingURL=style.css.map */

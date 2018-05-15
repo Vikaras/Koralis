@@ -84,12 +84,6 @@
         position: absolute;
         top: -4px;
         right: 0;
-
-        .drop-icon {
-          color: #c5c5da;
-          width: 12px;
-          height: 6px;
-        }
       }
     }
 
@@ -144,11 +138,31 @@
     width: 20%;
 
     .nav-user-text {
-      //margin: 28px 20px 41px 47px;
+      position: relative;
+      margin-top: 30px;
+      padding: 0 20px 0 47px;
 
       .nav-user-info {
-        line-height: 32px;
+        font-size: $text-size;
+        color: #000000;
       }
+
+      .status-light {
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        background: #f3343e;
+        border-radius: 50%;
+        top: 23px;
+        right: calc(100% - 95px);
+      }
+
+      .status-text {
+        font-size: $text-size-small;
+        color: #a9b7c6;
+        text-align: right;
+      }
+
     }
 
     .nav-user-img {
