@@ -1,8 +1,42 @@
 .four-fifths {
   background:$main-color;
 
-  .calendar-menu-wrap {
+  .calendar-wrap {
+    margin: 41px 0 16px;
+    padding: 0 20px 0 19px;
 
+    .calendar-menu-wrap {
+      display: flex;
+
+      .calendar-heading {
+        width: 418px;
+        font-size: 36px;
+        color: #000000;
+      }
+
+      .calendar-menu {
+        border-radius: 28px;
+        background: #ffffff;
+
+        .calendar-list {
+          //font-size: 0;
+
+          .calendar-list-item {
+            display: inline-block;
+            padding: 14px 0 11px;
+
+            .calendar-list-link {
+              font-size: $text-size;
+              color: #3d5477;
+            }
+          }
+        }
+      }
+
+      .calendar-event {
+        width: 408px;
+      }
+    }
   }
 
 }

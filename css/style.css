@@ -37,6 +37,9 @@ p {
 img {
   display: block; }
 
+h2 {
+  margin: 0; }
+
 .container {
   max-width: 1730px;
   width: 100%;
@@ -192,5 +195,25 @@ img {
 
 .four-fifths {
   background: #f8f9fb; }
+  .four-fifths .calendar-wrap {
+    margin: 41px 0 16px;
+    padding: 0 20px 0 19px; }
+    .four-fifths .calendar-wrap .calendar-menu-wrap {
+      display: flex; }
+      .four-fifths .calendar-wrap .calendar-menu-wrap .calendar-heading {
+        width: 418px;
+        font-size: 36px;
+        color: #000000; }
+      .four-fifths .calendar-wrap .calendar-menu-wrap .calendar-menu {
+        border-radius: 28px;
+        background: #ffffff; }
+        .four-fifths .calendar-wrap .calendar-menu-wrap .calendar-menu .calendar-list .calendar-list-item {
+          display: inline-block;
+          padding: 14px 0 11px; }
+          .four-fifths .calendar-wrap .calendar-menu-wrap .calendar-menu .calendar-list .calendar-list-item .calendar-list-link {
+            font-size: 16px;
+            color: #3d5477; }
+      .four-fifths .calendar-wrap .calendar-menu-wrap .calendar-event {
+        width: 408px; }
 
 /*# sourceMappingURL=style.css.map */
