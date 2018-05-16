@@ -4,10 +4,15 @@
   margin: 0 auto;
 }
 
+.clearfix {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 .fas {
   line-height: 6px !important;
 }
-
 
 .dropdown-icon {
   color: #c5c5da;

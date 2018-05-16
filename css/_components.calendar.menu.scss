@@ -1,20 +1,25 @@
 .four-fifths {
+  //width: 1384px;
   background: $main-color;
 
   .calendar-wrap {
-    margin: 41px 0 16px;
-    padding: 0 21px 0 20px;
+    margin: 40px 0 16px;
 
     .calendar-menu-wrap {
       display: flex;
 
       .calendar-heading {
-        width: 415px;
+        width: 435px;
+        margin: 4px 0 33px;
+        padding-left: 17px;
         font-size: 36px;
+        line-height: 52px;
         color: #000000;
       }
 
       .calendar-menu {
+        width: 523px;
+        margin-bottom: 44px;
         border-radius: 28px;
         background: #ffffff;
 
@@ -26,33 +31,51 @@
 
             .calendar-list-link {
               display: block;
+              border-radius: 28px;
               font-size: $text-size;
+              line-height: 24px;
               color: #3d5477;
+              transition: .3s;
+
+              &:hover,
+              :active {
+                font-family: $text-bold;
+                color: #ffffff;
+                //line-height: 20px;
+                //padding-top: 11px !important;
+                //padding-bottom: 14px !important;
+                background-image: linear-gradient(130deg, #ffe53b 0%, #f3333e 100%);
+              }
             }
 
             &:nth-child(1) .calendar-list-link {
-              padding: 14px 35px 11px 42px;
+              padding: 12px 35px 9px 42px;
             }
 
             &:nth-child(2) .calendar-list-link {
-              padding: 14px 40px 11px 35px;
+              padding: 12px 40px 9px 35px;
             }
 
             &:nth-child(3) .calendar-list-link {
-              padding: 14px 47px 11px 48px;
+              padding: 12px 47px 9px 48px;
             }
 
             &:nth-child(4) .calendar-list-link {
-              padding: 14px 52px 11px 40px;
+              padding: 12px 52px 9px 40px;
             }
           }
         }
       }
 
       .calendar-event {
-        width: 408px;
+        width: 426px;
+        padding-right: 18px;
+
+        .btn-add-event {
+          float: right;
+
+        }
       }
     }
   }
-
 }
