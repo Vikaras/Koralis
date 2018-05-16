@@ -40,6 +40,11 @@ img {
 h2 {
   margin: 0; }
 
+button {
+  border: none;
+  outline: none;
+  cursor: pointer; }
+
 .container {
   max-width: 1730px;
   width: 100%;
@@ -60,10 +65,7 @@ h2 {
 
 .dropdown-btn {
   font-size: 16px;
-  background: none;
-  border: none;
-  outline: none;
-  cursor: pointer; }
+  background: none; }
 
 .row {
   display: flex;
@@ -244,8 +246,15 @@ h2 {
               padding: 12px 52px 9px 40px; }
       .four-fifths .calendar-wrap .calendar-menu-wrap .calendar-event {
         width: 426px;
+        margin: 1px 0 44px;
         padding-right: 18px; }
         .four-fifths .calendar-wrap .calendar-menu-wrap .calendar-event .btn-add-event {
-          float: right; }
+          font-size: 16px;
+          color: #506584;
+          line-height: 24px;
+          background-color: #ebebf5;
+          border-radius: 28px;
+          float: right;
+          padding: 11px 36px 10px 35px; }
 
 /*# sourceMappingURL=style.css.map */
