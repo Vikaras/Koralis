@@ -92,12 +92,13 @@ h2 {
     border-right: 1px solid #eaebf0; }
     #header-nav .nav-wrap .nav-search {
       width: 473px;
-      margin: 15px 0 7px;
+      margin: 13px 0 5px;
       padding-left: 40px; }
       #header-nav .nav-wrap .nav-search .nav-search-form .fa-search {
         font-size: 27px;
         color: #c5c5da; }
       #header-nav .nav-wrap .nav-search .nav-search-form .input-search {
+        line-height: 24px;
         font-family: "dinregular", sans-serif;
         font-size: 16px;
         color: #aab8c7;
@@ -106,7 +107,7 @@ h2 {
         outline: none; }
     #header-nav .nav-wrap .nav-menu {
       width: 405px;
-      margin-top: 40px; }
+      margin-top: 36px; }
       #header-nav .nav-wrap .nav-menu .nav-list {
         font-size: 0; }
         #header-nav .nav-wrap .nav-menu .nav-list .nav-list-item {
@@ -114,6 +115,7 @@ h2 {
           position: relative;
           padding-bottom: 33px; }
           #header-nav .nav-wrap .nav-menu .nav-list .nav-list-item .nav-list-link {
+            line-height: 24px;
             font-size: 16px;
             color: #2e3948;
             padding: 33px 20px; }
@@ -168,14 +170,16 @@ h2 {
   #header-nav .nav-user-wrap {
     display: flex; }
     #header-nav .nav-user-wrap .nav-user-details {
-      margin-top: 30px;
+      margin-top: 26px;
       padding: 0 20px 0 48px; }
       #header-nav .nav-user-wrap .nav-user-details .nav-user-name {
+        line-height: 24px;
         font-size: 16px;
         color: #000000; }
       #header-nav .nav-user-wrap .nav-user-details .nav-user-status {
         position: relative; }
         #header-nav .nav-user-wrap .nav-user-details .nav-user-status .status-text {
+          line-height: 21px;
           font-size: 14px;
           color: #a9b7c6;
           text-align: right; }
@@ -185,7 +189,7 @@ h2 {
           height: 8px;
           background: #f3343e;
           border-radius: 50%;
-          top: 3px;
+          top: 4px;
           left: 40px; }
     #header-nav .nav-user-wrap .nav-user-img {
       margin: 19px 0; }
