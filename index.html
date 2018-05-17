@@ -17,8 +17,8 @@
         <div class="nav-wrap">
             <div class="nav-search">
                 <form action="#" class="nav-search-form">
-                    <span class="fa fa-search"></span><input type="text" placeholder="General search"
-                                                             class="input-search">
+                    <span class="fa fa-search nav-search-icon"></span><input type="text" placeholder="General search"
+                                                             id="nav-search">
                 </form>
             </div>
             <div class="nav-menu">
@@ -89,12 +89,13 @@
             </div>
         </div>
         <div class="one-fifth">
-            <div class="activity-wrap">
-                <h4 class="activity-heading">Calendar activity</h4>
-                <div class="past-activities-wrap">
-
+            <h4 class="sidebar-heading">Calendar activity</h4>
+            <div id="sidebar">
+                <div id="sidebar-search-form-wrap">
+                    <form action="#" id="sidebar-search-form">
+                        <span class="fa fa-search sidebar-search-icon"></span><input type="text" placeholder="Search by person, date, action" id="sidebar-search">
+                    </form>
                 </div>
-                <div class="present-activities"></div>
             </div>
         </div>
     </div>

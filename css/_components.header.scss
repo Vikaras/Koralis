@@ -29,19 +29,16 @@
 
       .nav-search-form {
 
-        .fa-search {
+        .nav-search-icon {
           font-size: 27px;
           color: #c5c5da;
         }
 
-        .input-search {
+        #nav-search {
           line-height: 24px;
-          font-family: $text;
           font-size: $text-size;
           color: #aab8c7;
           padding: 25px;
-          border: none;
-          outline: none;
         }
       }
     }

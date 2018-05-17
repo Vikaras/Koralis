@@ -35,7 +35,14 @@ img {
 }
 
 h2, h4 {
+  font-weight: normal;
   margin: 0;
+}
+
+input {
+  font-family: $text;
+  border: none;
+  outline: none;
 }
 
 button {

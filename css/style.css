@@ -38,7 +38,13 @@ img {
   display: block; }
 
 h2, h4 {
+  font-weight: normal;
   margin: 0; }
+
+input {
+  font-family: "dinregular", sans-serif;
+  border: none;
+  outline: none; }
 
 button {
   border: none;
@@ -97,17 +103,14 @@ button {
       width: 473px;
       margin: 13px 0 5px;
       padding-left: 40px; }
-      #header-nav .nav-wrap .nav-search .nav-search-form .fa-search {
+      #header-nav .nav-wrap .nav-search .nav-search-form .nav-search-icon {
         font-size: 27px;
         color: #c5c5da; }
-      #header-nav .nav-wrap .nav-search .nav-search-form .input-search {
+      #header-nav .nav-wrap .nav-search .nav-search-form #nav-search {
         line-height: 24px;
-        font-family: "dinregular", sans-serif;
         font-size: 16px;
         color: #aab8c7;
-        padding: 25px;
-        border: none;
-        outline: none; }
+        padding: 25px; }
     #header-nav .nav-wrap .nav-menu {
       width: 405px;
       margin-top: 36px; }
@@ -238,15 +241,7 @@ button {
               line-height: 24px;
               color: #3d5477;
               transition: .3s; }
-              .four-fifths .calendar-wrap .calendar-menu-wrap .calendar-menu .calendar-list .calendar-list-item .calendar-list-link:hover {
-                font-family: "dinbold", sans-serif;
-                color: #ffffff;
-                background: #ffe53b;
-                background: -moz-linear-gradient(left, #ffe53b 0%, #f3333e 100%);
-                background: -webkit-linear-gradient(left, #ffe53b 0%, #f3333e 100%);
-                background: linear-gradient(to right, #ffe53b 0%, #f3333e 100%);
-                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffe53b', endColorstr='#f3333e',GradientType=1 ); }
-              .four-fifths .calendar-wrap .calendar-menu-wrap .calendar-menu .calendar-list .calendar-list-item .calendar-list-link.active-calendar-list-link {
+              .four-fifths .calendar-wrap .calendar-menu-wrap .calendar-menu .calendar-list .calendar-list-item .calendar-list-link.active-calendar-list-link, .four-fifths .calendar-wrap .calendar-menu-wrap .calendar-menu .calendar-list .calendar-list-item .calendar-list-link:hover {
                 font-family: "dinbold", sans-serif;
                 color: #ffffff;
                 background: #ffe53b;
@@ -267,6 +262,7 @@ button {
         margin: 1px 0 44px;
         padding-right: 18px; }
         .four-fifths .calendar-wrap .calendar-menu-wrap .calendar-event .btn-add-event {
+          font-family: "dinregular", sans-serif;
           font-size: 16px;
           color: #506584;
           line-height: 24px;
@@ -274,11 +270,30 @@ button {
           border-radius: 28px;
           float: right;
           padding: 11px 36px 10px 35px; }
+          .four-fifths .calendar-wrap .calendar-menu-wrap .calendar-event .btn-add-event:hover {
+            background-color: #c9c9e4;
+            color: #ffffff; }
 
 .one-fifth {
   background: linear-gradient(180deg, #ededf6 0%, #f8f9fb 100%);
   padding: 17px 0 32px; }
-  .one-fifth .activity-wrap .activity-heading {
-    padding-left: 20px; }
+  .one-fifth .sidebar-heading {
+    padding-left: 20px;
+    margin-bottom: 4px; }
+  .one-fifth #sidebar #sidebar-search-form-wrap {
+    margin: 0 24px 26px 16px;
+    background: #ffffff;
+    border-radius: 3px; }
+    .one-fifth #sidebar #sidebar-search-form-wrap #sidebar-search-form .sidebar-search-icon {
+      font-size: 14px;
+      line-height: 14px;
+      color: #c5c5da;
+      padding: 11px 10px 10px 12px; }
+    .one-fifth #sidebar #sidebar-search-form-wrap #sidebar-search-form #sidebar-search {
+      width: 187px;
+      color: #b5bec8;
+      font-size: 14px;
+      line-height: 21px;
+      padding: 9px 0 5px; }
 
 /*# sourceMappingURL=style.css.map */

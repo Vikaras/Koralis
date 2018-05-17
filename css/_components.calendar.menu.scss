@@ -38,6 +38,7 @@
               color: #3d5477;
               transition: .3s;
 
+              &.active-calendar-list-link,
               &:hover {
                 font-family: $text-bold;
                 color: #ffffff;
@@ -48,15 +49,6 @@
                 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffe53b', endColorstr='#f3333e',GradientType=1 );
               }
 
-              &.active-calendar-list-link {
-                font-family: $text-bold;
-                color: #ffffff;
-                background: #ffe53b;
-                background: -moz-linear-gradient(left, #ffe53b 0%, #f3333e 100%);
-                background: -webkit-linear-gradient(left, #ffe53b 0%,#f3333e 100%);
-                background: linear-gradient(to right, #ffe53b 0%,#f3333e 100%);
-                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffe53b', endColorstr='#f3333e',GradientType=1 );
-              }
             }
 
             &:nth-child(1) .calendar-list-link {
@@ -84,6 +76,7 @@
         padding-right: 18px;
 
         .btn-add-event {
+          font-family: $text;
           font-size: $text-size;
           color: #506584;
           line-height: 24px;
@@ -91,6 +84,11 @@
           border-radius: 28px;
           float: right;
           padding: 11px 36px 10px 35px;
+
+          &:hover {
+            background-color: darken(#ebebf5, 10%);
+            color: #ffffff;
+          }
         }
       }
     }

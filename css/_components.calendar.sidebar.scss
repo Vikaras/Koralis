@@ -2,11 +2,37 @@
   background: linear-gradient(180deg, #ededf6 0%, #f8f9fb 100%);
   padding: 17px 0 32px;
 
-  .activity-wrap {
+  .sidebar-heading {
+    padding-left: 20px;
+    margin-bottom: 4px;
+  }
 
-    .activity-heading {
-      padding-left: 20px;
+  #sidebar {
 
+    #sidebar-search-form-wrap {
+      margin: 0 24px 26px 16px;
+      background: #ffffff;
+      border-radius: 3px;
+
+      #sidebar-search-form {
+
+        .sidebar-search-icon {
+          font-size: 14px;
+          line-height: 14px;
+          color: #c5c5da;
+          padding: 11px 10px 10px 12px;
+        }
+
+        #sidebar-search {
+          width: 187px;
+          color: #b5bec8;
+          font-size: $text-size-small;
+          line-height: 21px;
+          padding: 9px 0 5px;
+        }
+      }
     }
+
+
   }
 }
