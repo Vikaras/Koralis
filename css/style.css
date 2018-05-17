@@ -228,11 +228,22 @@ button {
               line-height: 24px;
               color: #3d5477;
               transition: .3s; }
-              .four-fifths .calendar-wrap .calendar-menu-wrap .calendar-menu .calendar-list .calendar-list-item .calendar-list-link:hover,
-              .four-fifths .calendar-wrap .calendar-menu-wrap .calendar-menu .calendar-list .calendar-list-item .calendar-list-link :active {
+              .four-fifths .calendar-wrap .calendar-menu-wrap .calendar-menu .calendar-list .calendar-list-item .calendar-list-link:hover {
                 font-family: "dinbold", sans-serif;
                 color: #ffffff;
-                background-image: linear-gradient(130deg, #ffe53b 0%, #f3333e 100%); }
+                background: #ffe53b;
+                background: -moz-linear-gradient(left, #ffe53b 0%, #f3333e 100%);
+                background: -webkit-linear-gradient(left, #ffe53b 0%, #f3333e 100%);
+                background: linear-gradient(to right, #ffe53b 0%, #f3333e 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffe53b', endColorstr='#f3333e',GradientType=1 ); }
+              .four-fifths .calendar-wrap .calendar-menu-wrap .calendar-menu .calendar-list .calendar-list-item .calendar-list-link.active-calendar-list-link {
+                font-family: "dinbold", sans-serif;
+                color: #ffffff;
+                background: #ffe53b;
+                background: -moz-linear-gradient(left, #ffe53b 0%, #f3333e 100%);
+                background: -webkit-linear-gradient(left, #ffe53b 0%, #f3333e 100%);
+                background: linear-gradient(to right, #ffe53b 0%, #f3333e 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffe53b', endColorstr='#f3333e',GradientType=1 ); }
             .four-fifths .calendar-wrap .calendar-menu-wrap .calendar-menu .calendar-list .calendar-list-item:nth-child(1) .calendar-list-link {
               padding: 12px 35px 9px 42px; }
             .four-fifths .calendar-wrap .calendar-menu-wrap .calendar-menu .calendar-list .calendar-list-item:nth-child(2) .calendar-list-link {

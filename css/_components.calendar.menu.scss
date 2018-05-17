@@ -29,6 +29,7 @@
           .calendar-list-item {
             display: inline-block;
 
+
             .calendar-list-link {
               display: block;
               border-radius: 28px;
@@ -37,14 +38,24 @@
               color: #3d5477;
               transition: .3s;
 
-              &:hover,
-              :active {
+              &:hover {
                 font-family: $text-bold;
                 color: #ffffff;
-                //line-height: 20px;
-                //padding-top: 11px !important;
-                //padding-bottom: 14px !important;
-                background-image: linear-gradient(130deg, #ffe53b 0%, #f3333e 100%);
+                background: #ffe53b;
+                background: -moz-linear-gradient(left, #ffe53b 0%, #f3333e 100%);
+                background: -webkit-linear-gradient(left, #ffe53b 0%,#f3333e 100%);
+                background: linear-gradient(to right, #ffe53b 0%,#f3333e 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffe53b', endColorstr='#f3333e',GradientType=1 );
+              }
+
+              &.active-calendar-list-link {
+                font-family: $text-bold;
+                color: #ffffff;
+                background: #ffe53b;
+                background: -moz-linear-gradient(left, #ffe53b 0%, #f3333e 100%);
+                background: -webkit-linear-gradient(left, #ffe53b 0%,#f3333e 100%);
+                background: linear-gradient(to right, #ffe53b 0%,#f3333e 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffe53b', endColorstr='#f3333e',GradientType=1 );
               }
             }
 
