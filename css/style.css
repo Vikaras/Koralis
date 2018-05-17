@@ -275,7 +275,11 @@ button {
             color: #ffffff; }
 
 .one-fifth {
-  background: linear-gradient(180deg, #ededf6 0%, #f8f9fb 100%);
+  background: #ededf6;
+  background: -moz-linear-gradient(left, #ededf6 0%, #f8f9fb 100%);
+  background: -webkit-linear-gradient(left, #ededf6 0%, #f8f9fb 100%);
+  background: linear-gradient(to right, #ededf6 0%, #f8f9fb 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededf6', endColorstr='#f8f9fb',GradientType=1 );
   padding: 17px 0 32px; }
   .one-fifth .sidebar-heading {
     padding-left: 20px;
@@ -295,5 +299,39 @@ button {
       font-size: 14px;
       line-height: 21px;
       padding: 9px 0 5px; }
+  .one-fifth #sidebar #events .events-container .events-list .events-list-item {
+    display: flex; }
+    .one-fifth #sidebar #events .events-container .events-list .events-list-item .sidebar-img-wrap {
+      position: relative;
+      margin-top: 2px;
+      padding: 0 12px 0 17px; }
+      .one-fifth #sidebar #events .events-container .events-list .events-list-item .sidebar-img-wrap .sidebar-user-status {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background: #7cd500;
+        border-radius: 50%;
+        bottom: 29px;
+        left: 40px; }
+    .one-fifth #sidebar #events .events-container .events-list .events-list-item .sidebar-events-info-wrap .sidebar-user-name {
+      display: block;
+      font-family: "dinbold", sans-serif;
+      font-size: 14px;
+      line-height: 18px; }
+    .one-fifth #sidebar #events .events-container .events-list .events-list-item .sidebar-events-info-wrap .events-list-link {
+      display: block;
+      font-size: 14px;
+      color: #000000;
+      line-height: 21px; }
+    .one-fifth #sidebar #events .events-container .events-list .events-list-item .sidebar-events-info-wrap .sidebar-clock-icon {
+      font-size: 12px;
+      color: #c5c5da;
+      margin: 3px 0 6px;
+      padding-right: 5px; }
+    .one-fifth #sidebar #events .events-container .events-list .events-list-item .sidebar-events-info-wrap .event-time {
+      display: inline-block;
+      font-size: 14px;
+      line-height: 21px;
+      color: #afbdd2; }
 
 /*# sourceMappingURL=style.css.map */
