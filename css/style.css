@@ -1,56 +1,263 @@
-/*
-Error: File to import not found or unreadable: components.calendar.activities.
-        on line 7 of style.scss
+@font-face {
+  font-family: 'dinbold';
+  src: url("../fonts/din_bold-webfont.woff2") format("woff2"), url("../fonts/din_bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'dinregular';
+  src: url("../fonts/din-webfont.woff2") format("woff2"), url("../fonts/din-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+* {
+  box-sizing: border-box; }
 
-2: @import "settings";
-3: @import "elements";
-4: @import "components";
-5: @import "components.header";
-6: @import "components.calendar.menu";
-7: @import "components.calendar.activities";
+html {
+  height: 100%; }
 
-Backtrace:
-style.scss:7
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/import_node.rb:67:in `rescue in import'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/import_node.rb:45:in `import'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/import_node.rb:28:in `imported_file'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/import_node.rb:37:in `css_import?'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:314:in `visit_import'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:161:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:10:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/plugin.rb:82:in `update_stylesheets'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/exec/sass_scss.rb:340:in `watch_or_update'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/exec/sass_scss.rb:51:in `process_result'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/exec/base.rb:52:in `parse'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/exec/base.rb:19:in `parse!'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/bin/scss:13:in `<top (required)>'
-C:/Ruby24-x64/bin/scss:23:in `load'
-C:/Ruby24-x64/bin/scss:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: File to import not found or unreadable: components.calendar.activities.\A         on line 7 of style.scss\A \A 2: @import \"settings\";\A 3: @import \"elements\";\A 4: @import \"components\";\A 5: @import \"components.header\";\A 6: @import \"components.calendar.menu\";\A 7: @import \"components.calendar.activities\";"; }
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  position: relative;
+  font-family: "dinregular", sans-serif;
+  color: #000;
+  background-color: #e7e7f3; }
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+p {
+  margin: 0; }
+
+img {
+  display: block; }
+
+h2, h4 {
+  margin: 0; }
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer; }
+
+.container {
+  max-width: 1730px;
+  width: 100%;
+  margin: 0 auto; }
+
+.clearfix {
+  content: "";
+  display: block;
+  clear: both; }
+
+.fas {
+  line-height: 6px !important; }
+
+.dropdown-icon {
+  color: #c5c5da;
+  width: 12px;
+  height: 6px; }
+
+.dropdown-btn {
+  font-size: 16px;
+  background: none; }
+
+.row {
+  display: flex;
+  flex-direction: row;
+  width: 100%; }
+
+.one-fifth {
+  width: 345px; }
+
+#header-nav {
+  display: flex;
+  width: 100%;
+  background: #ffffff;
+  margin-top: 62px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom: 1px solid #eaebf0; }
+  #header-nav .logo-wrap {
+    width: 112px; }
+    #header-nav .logo-wrap .logo-link {
+      display: block;
+      margin: 12px 21px 7px 19px;
+      padding: 20px; }
+  #header-nav .nav-wrap {
+    display: flex;
+    border-left: 1px solid #eaebf0;
+    border-right: 1px solid #eaebf0; }
+    #header-nav .nav-wrap .nav-search {
+      width: 473px;
+      margin: 13px 0 5px;
+      padding-left: 40px; }
+      #header-nav .nav-wrap .nav-search .nav-search-form .fa-search {
+        font-size: 27px;
+        color: #c5c5da; }
+      #header-nav .nav-wrap .nav-search .nav-search-form .input-search {
+        line-height: 24px;
+        font-family: "dinregular", sans-serif;
+        font-size: 16px;
+        color: #aab8c7;
+        padding: 25px;
+        border: none;
+        outline: none; }
+    #header-nav .nav-wrap .nav-menu {
+      width: 405px;
+      margin-top: 36px; }
+      #header-nav .nav-wrap .nav-menu .nav-list {
+        font-size: 0; }
+        #header-nav .nav-wrap .nav-menu .nav-list .nav-list-item {
+          display: inline-block;
+          position: relative;
+          padding-bottom: 33px; }
+          #header-nav .nav-wrap .nav-menu .nav-list .nav-list-item .nav-list-link {
+            line-height: 24px;
+            font-size: 16px;
+            color: #2e3948;
+            padding: 33px 20px; }
+            #header-nav .nav-wrap .nav-menu .nav-list .nav-list-item .nav-list-link::after {
+              height: 3px;
+              content: '';
+              position: absolute;
+              display: block;
+              background: #f3333e;
+              bottom: 0;
+              opacity: 0;
+              right: 20px;
+              left: 20px;
+              transition: opacity .3s; }
+            #header-nav .nav-wrap .nav-menu .nav-list .nav-list-item .nav-list-link:hover::after {
+              opacity: 1; }
+          #header-nav .nav-wrap .nav-menu .nav-list .nav-list-item .dropdown-drive {
+            position: absolute;
+            top: -4px;
+            right: -5px; }
+    #header-nav .nav-wrap .nav-actions {
+      width: 393px;
+      margin-top: 14px;
+      padding-right: 31px; }
+      #header-nav .nav-wrap .nav-actions .nav-actions-list {
+        font-size: 0;
+        float: right; }
+        #header-nav .nav-wrap .nav-actions .nav-actions-list .nav-actions-list-item {
+          position: relative;
+          display: inline-block; }
+          #header-nav .nav-wrap .nav-actions .nav-actions-list .nav-actions-list-item .nav-actions-list-link {
+            display: block;
+            padding: 20px; }
+      #header-nav .nav-wrap .nav-actions .notify-light {
+        position: absolute;
+        width: 26px;
+        height: 26px;
+        background: #f3333e;
+        border-radius: 50%;
+        border: 3px solid #ffffff;
+        top: 9px;
+        right: 9px; }
+        #header-nav .nav-wrap .nav-actions .notify-light .notify-count {
+          text-align: center;
+          line-height: 20px;
+          font-size: 12px;
+          color: #ffffff;
+          font-family: "dinbold", sans-serif; }
+  #header-nav .nav-user-wrap {
+    width: 345px;
+    display: flex; }
+    #header-nav .nav-user-wrap .nav-user-details {
+      margin-top: 26px;
+      padding: 0 20px 0 48px; }
+      #header-nav .nav-user-wrap .nav-user-details .nav-user-name {
+        line-height: 24px;
+        font-size: 16px;
+        color: #000000; }
+      #header-nav .nav-user-wrap .nav-user-details .nav-user-status {
+        position: relative; }
+        #header-nav .nav-user-wrap .nav-user-details .nav-user-status .status-text {
+          line-height: 21px;
+          font-size: 14px;
+          color: #a9b7c6;
+          text-align: right; }
+        #header-nav .nav-user-wrap .nav-user-details .nav-user-status .status-light {
+          position: absolute;
+          width: 8px;
+          height: 8px;
+          background: #f3343e;
+          border-radius: 50%;
+          top: 4px;
+          left: 40px; }
+    #header-nav .nav-user-wrap .nav-user-img {
+      margin: 19px 0; }
+    #header-nav .nav-user-wrap .nav-user-drop {
+      line-height: 6px;
+      margin: 36px 0;
+      padding: 0 35px 0 18px; }
+
+.four-fifths {
+  background: #f8f9fb; }
+  .four-fifths .calendar-wrap {
+    margin: 40px 0 16px; }
+    .four-fifths .calendar-wrap .calendar-menu-wrap {
+      display: flex; }
+      .four-fifths .calendar-wrap .calendar-menu-wrap .calendar-heading {
+        width: 435px;
+        margin: 4px 0 33px;
+        padding-left: 17px;
+        font-size: 36px;
+        line-height: 52px;
+        color: #000000; }
+      .four-fifths .calendar-wrap .calendar-menu-wrap .calendar-menu {
+        width: 523px;
+        margin-bottom: 44px;
+        border-radius: 28px;
+        background: #ffffff; }
+        .four-fifths .calendar-wrap .calendar-menu-wrap .calendar-menu .calendar-list {
+          font-size: 0; }
+          .four-fifths .calendar-wrap .calendar-menu-wrap .calendar-menu .calendar-list .calendar-list-item {
+            display: inline-block; }
+            .four-fifths .calendar-wrap .calendar-menu-wrap .calendar-menu .calendar-list .calendar-list-item .calendar-list-link {
+              display: block;
+              border-radius: 28px;
+              font-size: 16px;
+              line-height: 24px;
+              color: #3d5477;
+              transition: .3s; }
+              .four-fifths .calendar-wrap .calendar-menu-wrap .calendar-menu .calendar-list .calendar-list-item .calendar-list-link:hover,
+              .four-fifths .calendar-wrap .calendar-menu-wrap .calendar-menu .calendar-list .calendar-list-item .calendar-list-link :active {
+                font-family: "dinbold", sans-serif;
+                color: #ffffff;
+                background-image: linear-gradient(130deg, #ffe53b 0%, #f3333e 100%); }
+            .four-fifths .calendar-wrap .calendar-menu-wrap .calendar-menu .calendar-list .calendar-list-item:nth-child(1) .calendar-list-link {
+              padding: 12px 35px 9px 42px; }
+            .four-fifths .calendar-wrap .calendar-menu-wrap .calendar-menu .calendar-list .calendar-list-item:nth-child(2) .calendar-list-link {
+              padding: 12px 40px 9px 35px; }
+            .four-fifths .calendar-wrap .calendar-menu-wrap .calendar-menu .calendar-list .calendar-list-item:nth-child(3) .calendar-list-link {
+              padding: 12px 47px 9px 48px; }
+            .four-fifths .calendar-wrap .calendar-menu-wrap .calendar-menu .calendar-list .calendar-list-item:nth-child(4) .calendar-list-link {
+              padding: 12px 52px 9px 40px; }
+      .four-fifths .calendar-wrap .calendar-menu-wrap .calendar-event {
+        width: 426px;
+        margin: 1px 0 44px;
+        padding-right: 18px; }
+        .four-fifths .calendar-wrap .calendar-menu-wrap .calendar-event .btn-add-event {
+          font-size: 16px;
+          color: #506584;
+          line-height: 24px;
+          background-color: #ebebf5;
+          border-radius: 28px;
+          float: right;
+          padding: 11px 36px 10px 35px; }
+
+.one-fifth {
+  background: linear-gradient(180deg, #ededf6 0%, #f8f9fb 100%);
+  padding: 17px 0 32px; }
+  .one-fifth .activity-wrap .activity-heading {
+    padding-left: 20px; }
+
+/*# sourceMappingURL=style.css.map */
