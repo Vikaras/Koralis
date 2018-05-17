@@ -122,6 +122,16 @@ button {
             font-size: 16px;
             color: #2e3948;
             padding: 33px 20px; }
+            #header-nav .nav-wrap .nav-menu .nav-list .nav-list-item .nav-list-link.active-nav-list-link::after {
+              height: 3px;
+              content: '';
+              position: absolute;
+              display: block;
+              background: #f3333e;
+              bottom: 0;
+              opacity: 1;
+              right: 20px;
+              left: 20px; }
             #header-nav .nav-wrap .nav-menu .nav-list .nav-list-item .nav-list-link::after {
               height: 3px;
               content: '';
