@@ -76,10 +76,8 @@ button {
 .row {
   display: flex;
   flex-direction: row;
-  width: 100%; }
-
-.one-fifth {
-  width: 345px; }
+  width: 100%;
+  margin-bottom: 72px; }
 
 #header-nav {
   display: flex;
@@ -275,12 +273,13 @@ button {
             color: #ffffff; }
 
 .one-fifth {
+  width: 345px;
   background: #ededf6;
   background: -moz-linear-gradient(left, #ededf6 0%, #f8f9fb 100%);
   background: -webkit-linear-gradient(left, #ededf6 0%, #f8f9fb 100%);
   background: linear-gradient(to right, #ededf6 0%, #f8f9fb 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededf6', endColorstr='#f8f9fb',GradientType=1 );
-  padding: 17px 0 32px; }
+  padding: 17px 0 21px; }
   .one-fifth .sidebar-heading {
     padding-left: 20px;
     margin-bottom: 4px; }
@@ -299,44 +298,56 @@ button {
       font-size: 14px;
       line-height: 21px;
       padding: 9px 0 5px; }
-  .one-fifth #sidebar #events .events-container .events-list .events-list-item {
-    display: flex;
-    padding-left: 17px; }
-    .one-fifth #sidebar #events .events-container .events-list .events-list-item .sidebar-img-wrap {
-      position: relative;
-      margin-top: 2px; }
-      .one-fifth #sidebar #events .events-container .events-list .events-list-item .sidebar-img-wrap .sidebar-user-status {
-        position: absolute;
-        width: 10px;
-        height: 10px;
-        background: #7cd500;
-        border-radius: 50%;
-        top: 23px;
-        right: -1px; }
-    .one-fifth #sidebar #events .events-container .events-list .events-list-item .sidebar-events-info-wrap {
-      padding-left: 12px; }
-      .one-fifth #sidebar #events .events-container .events-list .events-list-item .sidebar-events-info-wrap .sidebar-user-name {
-        display: block;
-        font-family: "dinbold", sans-serif;
-        font-size: 14px;
-        line-height: 18px; }
-      .one-fifth #sidebar #events .events-container .events-list .events-list-item .sidebar-events-info-wrap .events-details {
-        display: block;
-        font-size: 14px;
-        color: #000000;
-        line-height: 21px; }
-      .one-fifth #sidebar #events .events-container .events-list .events-list-item .sidebar-events-info-wrap .events-time-wrap {
-        position: relative; }
-        .one-fifth #sidebar #events .events-container .events-list .events-list-item .sidebar-events-info-wrap .events-time-wrap .sidebar-clock-icon {
+  .one-fifth #sidebar #events {
+    height: 793px;
+    overflow-y: auto; }
+    .one-fifth #sidebar #events .events-container .events-date {
+      display: inline-block;
+      font-size: 16px;
+      padding-left: 17px;
+      margin: 10px 0 21px;
+      height: 24px; }
+    .one-fifth #sidebar #events .events-container .events-list .events-list-item {
+      display: flex;
+      padding-left: 17px; }
+      .one-fifth #sidebar #events .events-container .events-list .events-list-item .sidebar-img-wrap {
+        position: relative;
+        margin-top: 2px; }
+        .one-fifth #sidebar #events .events-container .events-list .events-list-item .sidebar-img-wrap .sidebar-user-status {
           position: absolute;
-          font-size: 12px;
-          color: #c5c5da;
-          top: 0;
-          left: 0; }
-        .one-fifth #sidebar #events .events-container .events-list .events-list-item .sidebar-events-info-wrap .events-time-wrap .events-time {
-          padding-left: 17px;
+          width: 10px;
+          height: 10px;
+          background: #7cd500;
+          border-radius: 50%;
+          top: 23px;
+          right: -1px; }
+        .one-fifth #sidebar #events .events-container .events-list .events-list-item .sidebar-img-wrap .sidebar-user-status-do-not-disturb {
+          background: #f3343e; }
+      .one-fifth #sidebar #events .events-container .events-list .events-list-item .sidebar-events-info-wrap {
+        padding-left: 12px;
+        margin-bottom: 11px; }
+        .one-fifth #sidebar #events .events-container .events-list .events-list-item .sidebar-events-info-wrap .sidebar-user-name {
+          display: block;
+          font-family: "dinbold", sans-serif;
           font-size: 14px;
-          line-height: 21px;
-          color: #afbdd2; }
+          line-height: 18px; }
+        .one-fifth #sidebar #events .events-container .events-list .events-list-item .sidebar-events-info-wrap .events-details {
+          display: block;
+          font-size: 14px;
+          color: #000000;
+          line-height: 21px; }
+        .one-fifth #sidebar #events .events-container .events-list .events-list-item .sidebar-events-info-wrap .events-time-wrap {
+          position: relative; }
+          .one-fifth #sidebar #events .events-container .events-list .events-list-item .sidebar-events-info-wrap .events-time-wrap .sidebar-clock-icon {
+            position: absolute;
+            font-size: 12px;
+            color: #c5c5da;
+            top: 0;
+            left: 0; }
+          .one-fifth #sidebar #events .events-container .events-list .events-list-item .sidebar-events-info-wrap .events-time-wrap .events-time {
+            padding-left: 17px;
+            font-size: 14px;
+            line-height: 21px;
+            color: #afbdd2; }
 
 /*# sourceMappingURL=style.css.map */
