@@ -45,11 +45,11 @@
 
           .events-list-item {
             display: flex;
+            padding-left: 17px;
 
             .sidebar-img-wrap {
               position: relative;
               margin-top: 2px;
-              padding: 0 12px 0 17px;
 
               .sidebar-user-status {
                 position: absolute;
@@ -57,12 +57,13 @@
                 height: 10px;
                 background: #7cd500;
                 border-radius: 50%;
-                bottom: 27px;
-                left: 40px;
+                top: 23px;
+                right: -1px;
               }
             }
 
             .sidebar-events-info-wrap {
+              padding-left: 12px;
 
               .sidebar-user-name {
                 display: block;
@@ -71,14 +72,14 @@
                 line-height: 18px;
               }
 
-              .events-list-link {
+              .events-details {
                 display: block;
                 font-size: $text-size-small;
                 color: #000000;
                 line-height: 21px;
               }
 
-              .event-time-wrap {
+              .events-time-wrap {
                 position: relative;
 
                 .sidebar-clock-icon {
@@ -89,7 +90,7 @@
                   left: 0;
                 }
 
-                .event-time {
+                .events-time {
                   padding-left: 17px;
                   font-size: $text-size-small;
                   line-height: 21px;
