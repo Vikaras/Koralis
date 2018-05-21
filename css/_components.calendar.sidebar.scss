@@ -57,7 +57,7 @@
                 height: 10px;
                 background: #7cd500;
                 border-radius: 50%;
-                bottom: 29px;
+                bottom: 27px;
                 left: 40px;
               }
             }
@@ -78,18 +78,23 @@
                 line-height: 21px;
               }
 
-              .sidebar-clock-icon {
-                font-size: 12px;
-                color: #c5c5da;
-                margin: 3px 0 6px;
-                padding-right: 5px;
-              }
+              .event-time-wrap {
+                position: relative;
 
-              .event-time {
-                display: inline-block;
-                font-size: $text-size-small;
-                line-height: 21px;
-                color: #afbdd2;
+                .sidebar-clock-icon {
+                  position: absolute;
+                  font-size: 12px;
+                  color: #c5c5da;
+                  top: 0;
+                  left: 0;
+                }
+
+                .event-time {
+                  padding-left: 17px;
+                  font-size: $text-size-small;
+                  line-height: 21px;
+                  color: #afbdd2;
+                }
               }
             }
           }
