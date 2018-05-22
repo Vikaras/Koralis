@@ -1,9 +1,10 @@
-$(function() {
+$(function () {
 
     // page is now ready, initialize the calendar...
 
     $('#calendar').fullCalendar({
         // put your options and callbacks here
+        defaultView: 'month',
         height: 752,
         contentHeight: 702,
         fixedWeekCount: false, //savaiciu kiekis
@@ -12,7 +13,15 @@ $(function() {
                 left: 'month,agendaWeek',
                 center: 'prev,title,next',
                 right: ''
-            }
+            },
+            views:
+                {
+                    month:
+                        {
+                        columnHeaderFormat: 'dddd'
+                    }
+                }
+
     })
     $(".fc-month-button").html('<i class="fas fa-th"></i>')
     $(".fc-agendaWeek-button").html('<i class="fas fa-bars"></i>')

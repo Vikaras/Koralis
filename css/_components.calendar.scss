@@ -3,6 +3,7 @@
   padding: 0 20px;
 
   .fc-toolbar {
+    height: 49px;
     border: $header-border;
     border-bottom: none;
     margin: 0;
@@ -42,7 +43,31 @@
     }
 
     .fc-center {
+      height: 34px;
+      margin: 11px 0 3px;
 
+      .fc-prev-button,
+      .fc-next-button {
+        display: inline-block;
+        background: red;
+        height: 28px;
+        margin-bottom: 6px;
+        padding: 10px;
+
+        .fa-chevron-left,
+        .fa-chevron-right {
+          font-size: 8px;
+          color: #000;
+          margin: 0 auto;
+        }
+      }
+
+      h2 {
+        display: inline-block;
+        font-size: 23px;
+        line-height: 34px;
+        padding: 0 27px 0 42px;
+      }
     }
   }
 }

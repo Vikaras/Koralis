@@ -273,6 +273,7 @@ button {
   width: 1384px;
   padding: 0 20px; }
   #calendar .fc-toolbar {
+    height: 49px;
     border: 1px solid #eaebf0;
     border-bottom: none;
     margin: 0; }
@@ -296,6 +297,28 @@ button {
       #calendar .fc-toolbar .fc-left .fc-button-group .fa-bars {
         color: #222;
         font-size: 18px; }
+    #calendar .fc-toolbar .fc-center {
+      height: 34px;
+      margin: 11px 0 3px; }
+      #calendar .fc-toolbar .fc-center .fc-prev-button,
+      #calendar .fc-toolbar .fc-center .fc-next-button {
+        display: inline-block;
+        background: red;
+        height: 28px;
+        margin-bottom: 6px;
+        padding: 10px; }
+        #calendar .fc-toolbar .fc-center .fc-prev-button .fa-chevron-left,
+        #calendar .fc-toolbar .fc-center .fc-prev-button .fa-chevron-right,
+        #calendar .fc-toolbar .fc-center .fc-next-button .fa-chevron-left,
+        #calendar .fc-toolbar .fc-center .fc-next-button .fa-chevron-right {
+          font-size: 8px;
+          color: #000;
+          margin: 0 auto; }
+      #calendar .fc-toolbar .fc-center h2 {
+        display: inline-block;
+        font-size: 23px;
+        line-height: 34px;
+        padding: 0 27px 0 42px; }
 
 .one-fifth {
   width: 345px;
