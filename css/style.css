@@ -61,9 +61,6 @@ button {
   display: block;
   clear: both; }
 
-.fas {
-  line-height: 6px !important; }
-
 .dropdown-icon {
   color: #c5c5da;
   width: 12px;
@@ -275,14 +272,38 @@ button {
 #calendar {
   width: 1384px;
   padding: 0 20px; }
+  #calendar .fc-toolbar {
+    border: 1px solid #eaebf0;
+    border-bottom: none;
+    margin: 0; }
+    #calendar .fc-toolbar .fc-button {
+      border: none;
+      border-radius: unset;
+      text-shadow: none; }
+    #calendar .fc-toolbar .fc-state-default {
+      background: none;
+      box-shadow: none; }
+    #calendar .fc-toolbar .fc-left {
+      margin: 8px 0 12px 18px; }
+      #calendar .fc-toolbar .fc-left .fc-button-group .fc-month-button,
+      #calendar .fc-toolbar .fc-left .fc-button-group .fc-agendaWeek-button {
+        padding: 5px;
+        height: 28px; }
+        #calendar .fc-toolbar .fc-left .fc-button-group .fc-month-button:first-child,
+        #calendar .fc-toolbar .fc-left .fc-button-group .fc-agendaWeek-button:first-child {
+          margin-right: 5px; }
+      #calendar .fc-toolbar .fc-left .fc-button-group .fa-th,
+      #calendar .fc-toolbar .fc-left .fc-button-group .fa-bars {
+        color: #222;
+        font-size: 18px; }
 
 .one-fifth {
   width: 345px;
   background: #ededf6;
-  background: -moz-linear-gradient(left, #ededf6 0%, #f8f9fb 100%);
-  background: -webkit-linear-gradient(left, #ededf6 0%, #f8f9fb 100%);
-  background: linear-gradient(to right, #ededf6 0%, #f8f9fb 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededf6', endColorstr='#f8f9fb',GradientType=1 );
+  background: -moz-linear-gradient(top, #ededf6 0%, #f8f9fb 389px);
+  background: -webkit-linear-gradient(top, #ededf6 0%, #f8f9fb 389px);
+  background: linear-gradient(to bottom, #ededf6 0%, #f8f9fb 389px);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededf6', endColorstr='#f8f9fb',GradientType=0 );
   padding: 17px 0 21px; }
   .one-fifth .sidebar-heading {
     padding-left: 20px;

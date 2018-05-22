@@ -1,4 +1,48 @@
 #calendar {
   width: 1384px;
   padding: 0 20px;
+
+  .fc-toolbar {
+    border: $header-border;
+    border-bottom: none;
+    margin: 0;
+
+    .fc-button {
+      border: none;
+      border-radius: unset;
+      text-shadow: none;
+    }
+
+    .fc-state-default {
+      background: none;
+      box-shadow: none;
+    }
+
+    .fc-left {
+      margin: 8px 0 12px 18px;
+
+      .fc-button-group {
+
+        .fc-month-button,
+        .fc-agendaWeek-button {
+          padding: 5px;
+          height: 28px;
+
+          &:first-child {
+            margin-right: 5px;
+          }
+        }
+
+        .fa-th,
+        .fa-bars {
+          color: #222;
+          font-size: 18px;
+        }
+      }
+    }
+
+    .fc-center {
+
+    }
+  }
 }

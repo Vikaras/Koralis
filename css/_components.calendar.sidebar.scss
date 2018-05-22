@@ -1,10 +1,10 @@
 .one-fifth {
   width: 345px;
   background: #ededf6;
-  background: -moz-linear-gradient(left, #ededf6 0%, #f8f9fb 100%);
-  background: -webkit-linear-gradient(left, #ededf6 0%,#f8f9fb 100%);
-  background: linear-gradient(to right, #ededf6 0%,#f8f9fb 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededf6', endColorstr='#f8f9fb',GradientType=1 );
+  background: -moz-linear-gradient(top, #ededf6 0%, #f8f9fb 389px);
+  background: -webkit-linear-gradient(top, #ededf6 0%,#f8f9fb 389px);
+  background: linear-gradient(to bottom, #ededf6 0%,#f8f9fb 389px);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededf6', endColorstr='#f8f9fb',GradientType=0 );
   padding: 17px 0 21px;
 
   .sidebar-heading {

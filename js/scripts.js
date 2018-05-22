@@ -9,10 +9,15 @@ $(function() {
         fixedWeekCount: false, //savaiciu kiekis
         header:
             {
-                left: 'month,basicDay',
+                left: 'month,agendaWeek',
                 center: 'prev,title,next',
                 right: ''
             }
     })
+    $(".fc-month-button").html('<i class="fas fa-th"></i>')
+    $(".fc-agendaWeek-button").html('<i class="fas fa-bars"></i>')
+    $(".fc-prev-button").html('<i class="fas fa-chevron-left"></i>')
+    $(".fc-next-button").html('<i class="fas fa-chevron-right"></i>')
 
 });
+
