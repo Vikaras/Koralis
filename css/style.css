@@ -319,6 +319,29 @@ button {
         font-size: 23px;
         line-height: 34px;
         padding: 0 27px 0 42px; }
+  #calendar .fc-view-container .fc-day-header {
+    height: 37px;
+    text-align: left; }
+    #calendar .fc-view-container .fc-day-header span {
+      display: block;
+      height: 21px;
+      margin: 9px 0 7px;
+      padding-left: 30px;
+      font-size: 14px;
+      font-weight: 500;
+      color: #506584; }
+  #calendar .fc-view-container .fc-day-top {
+    height: 57px; }
+    #calendar .fc-view-container .fc-day-top .fc-day-number {
+      float: none;
+      display: block;
+      height: 34px;
+      margin-top: 23px;
+      padding: 0 0 0 18px;
+      font-size: 23px; }
+    #calendar .fc-view-container .fc-day-top.fc-other-month {
+      opacity: 1;
+      color: #c5c5da; }
 
 .one-fifth {
   width: 345px;

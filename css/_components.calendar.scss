@@ -70,4 +70,40 @@
       }
     }
   }
+
+  .fc-view-container {
+
+      .fc-day-header {
+        height: 37px;
+        text-align: left;
+
+        & span {
+          display: block;
+          height: 21px;
+          margin: 9px 0 7px;
+          padding-left: 30px;
+          font-size: $text-size-small;
+          font-weight: 500;
+          color: #506584;
+        }
+      }
+
+    .fc-day-top {
+      height: 57px;
+
+      .fc-day-number {
+        float: none;
+        display: block;
+        height: 34px;
+        margin-top: 23px;
+        padding: 0 0 0 18px;
+        font-size: 23px;
+      }
+
+        &.fc-other-month{
+        opacity: 1;
+        color: #c5c5da;
+      }
+    }
+  }
 }
