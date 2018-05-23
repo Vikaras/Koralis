@@ -599,7 +599,7 @@ TODO: more distinction between this file and common.css
 .fc-unthemed .fc-popover,
 .fc-unthemed .fc-list-view,
 .fc-unthemed .fc-list-heading td {
-  border-color: #eaebf0; }
+  border-color: #ddd; }
 
 .fc-unthemed .fc-popover {
   background-color: #fff; }
@@ -613,7 +613,7 @@ TODO: more distinction between this file and common.css
   color: #666; }
 
 .fc-unthemed td.fc-today {
-  background: #ececf6; }
+  background: #fcf8e3; }
 
 .fc-unthemed .fc-disabled-day {
   background: #d7d7d7;

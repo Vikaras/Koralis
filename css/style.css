@@ -342,6 +342,16 @@ button {
     #calendar .fc-view-container .fc-day-top.fc-other-month {
       opacity: 1;
       color: #c5c5da; }
+  #calendar.fc-unthemed th, #calendar.fc-unthemed td, #calendar.fc-unthemed thead, #calendar.fc-unthemed tbody, #calendar.fc-unthemed .fc-divider, #calendar.fc-unthemed .fc-row, #calendar.fc-unthemed .fc-content, #calendar.fc-unthemed .fc-popover, #calendar.fc-unthemed .fc-list-view, #calendar.fc-unthemed .fc-list-heading td {
+    border-color: #eaebf0; }
+  #calendar.fc-unthemed td.fc-today {
+    background: #ececf6; }
+  #calendar.fc-unthemed td.fc-today .fc-day-number {
+    height: 43px;
+    margin-top: 15px;
+    padding-left: 24px;
+    font-family: 'dinbold', sans-serif;
+    font-size: 32px; }
 
 .one-fifth {
   width: 345px;
