@@ -14,13 +14,13 @@ $(function () {
                 center: 'prev,title,next',
                 right: ''
             },
-            views:
-                {
-                    month:
-                        {
+        views:
+            {
+                month:
+                    {
                         columnHeaderFormat: 'dddd'
                     }
-                }
+            }
     })
 
     $(".fc-month-button").html('<i class="fas fa-th"></i>')

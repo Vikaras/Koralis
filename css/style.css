@@ -363,7 +363,8 @@ button {
   padding: 17px 0 21px; }
   .one-fifth .sidebar-heading {
     padding-left: 20px;
-    margin-bottom: 4px; }
+    margin-bottom: 4px;
+    line-height: 24px; }
   .one-fifth #sidebar #sidebar-search-form-wrap {
     margin: 0 24px 26px 16px;
     background: #ffffff;
@@ -380,7 +381,7 @@ button {
       line-height: 21px;
       padding: 9px 0 5px; }
   .one-fifth #sidebar #events {
-    height: 793px;
+    height: 771px;
     overflow-y: auto; }
     .one-fifth #sidebar #events .events-container .events-date {
       display: inline-block;
@@ -411,7 +412,7 @@ button {
           display: block;
           font-family: "dinbold", sans-serif;
           font-size: 14px;
-          line-height: 18px; }
+          line-height: 20px; }
         .one-fifth #sidebar #events .events-container .events-list .events-list-item .sidebar-events-info-wrap .events-details {
           display: block;
           font-size: 14px;

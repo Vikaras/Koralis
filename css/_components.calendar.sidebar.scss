@@ -10,6 +10,7 @@
   .sidebar-heading {
     padding-left: 20px;
     margin-bottom: 4px;
+    line-height: 24px;
   }
 
   #sidebar {
@@ -39,7 +40,7 @@
     }
 
     #events {
-      height: 793px;
+      height: 771px;
       overflow-y: auto;
 
       .events-container {
@@ -86,7 +87,7 @@
                 display: block;
                 font-family: $text-bold;
                 font-size: $text-size-small;
-                line-height: 18px;
+                line-height: 20px;
               }
 
               .events-details {
