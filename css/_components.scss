@@ -10,10 +10,6 @@
   clear: both;
 }
 
-//.fas {
-//  line-height: 6px !important;
-//}
-
 .dropdown-icon {
   color: #c5c5da;
   width: 12px;
@@ -32,6 +28,9 @@
   margin-bottom: 72px;
 }
 
-.fc-state-default {
-
+.on-hover {
+  background: red;
+  border-radius: 50%;
+  color: blue;
+  transition: background-color 0.2s ease;
 }

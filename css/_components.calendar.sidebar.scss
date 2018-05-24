@@ -85,9 +85,11 @@
 
               .sidebar-user-name {
                 display: block;
-                font-family: $text-bold;
                 font-size: $text-size-small;
                 line-height: 20px;
+                font-weight: 700;
+                //Bold sulieja raides
+                //font-family: $text-bold;
               }
 
               .events-details {

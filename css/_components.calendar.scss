@@ -34,9 +34,13 @@
           }
         }
 
-        .fa-th,
-        .fa-bars {
-          color: #222;
+        .active-btn-color {
+          color: #dcdce7;
+          font-size: 18px;
+        }
+
+        .passive-btn-color {
+          color: #222222;
           font-size: 18px;
         }
       }
@@ -107,6 +111,24 @@
     }
   }
 
+  .fc-event-container {
+
+    .gcal-event {
+      margin: 0;
+      padding: 0;
+      border-radius: unset;
+
+      .fc-content {
+        //width: 192px;
+        //height: 134px;
+
+        .fc-title {
+          font-size: 17px;
+        }
+      }
+    }
+  }
+
   &.fc-unthemed th,
   &.fc-unthemed td,
   &.fc-unthemed thead,
@@ -128,4 +150,11 @@
     padding-left: 24px;
     font-family: 'dinbold', sans-serif;
     font-size: 32px; }
+
 }
+//.on-hover {
+//  background: red;
+//  border-radius: 50%;
+//  color: #fff;
+//  transition: background-color 0.2s ease;
+//}

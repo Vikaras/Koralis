@@ -76,6 +76,12 @@ button {
   width: 100%;
   margin-bottom: 72px; }
 
+.on-hover {
+  background: red;
+  border-radius: 50%;
+  color: blue;
+  transition: background-color 0.2s ease; }
+
 #header-nav {
   display: flex;
   width: 100%;
@@ -293,9 +299,11 @@ button {
         #calendar .fc-toolbar .fc-left .fc-button-group .fc-month-button:first-child,
         #calendar .fc-toolbar .fc-left .fc-button-group .fc-agendaWeek-button:first-child {
           margin-right: 5px; }
-      #calendar .fc-toolbar .fc-left .fc-button-group .fa-th,
-      #calendar .fc-toolbar .fc-left .fc-button-group .fa-bars {
-        color: #222;
+      #calendar .fc-toolbar .fc-left .fc-button-group .active-btn-color {
+        color: #dcdce7;
+        font-size: 18px; }
+      #calendar .fc-toolbar .fc-left .fc-button-group .passive-btn-color {
+        color: #222222;
         font-size: 18px; }
     #calendar .fc-toolbar .fc-center {
       height: 34px;
@@ -342,6 +350,12 @@ button {
     #calendar .fc-view-container .fc-day-top.fc-other-month {
       opacity: 1;
       color: #c5c5da; }
+  #calendar .fc-event-container .gcal-event {
+    margin: 0;
+    padding: 0;
+    border-radius: unset; }
+    #calendar .fc-event-container .gcal-event .fc-content .fc-title {
+      font-size: 17px; }
   #calendar.fc-unthemed th, #calendar.fc-unthemed td, #calendar.fc-unthemed thead, #calendar.fc-unthemed tbody, #calendar.fc-unthemed .fc-divider, #calendar.fc-unthemed .fc-row, #calendar.fc-unthemed .fc-content, #calendar.fc-unthemed .fc-popover, #calendar.fc-unthemed .fc-list-view, #calendar.fc-unthemed .fc-list-heading td {
     border-color: #eaebf0; }
   #calendar.fc-unthemed td.fc-today {
@@ -410,9 +424,9 @@ button {
         margin-bottom: 11px; }
         .one-fifth #sidebar #events .events-container .events-list .events-list-item .sidebar-events-info-wrap .sidebar-user-name {
           display: block;
-          font-family: "dinbold", sans-serif;
           font-size: 14px;
-          line-height: 20px; }
+          line-height: 20px;
+          font-weight: 700; }
         .one-fifth #sidebar #events .events-container .events-list .events-list-item .sidebar-events-info-wrap .events-details {
           display: block;
           font-size: 14px;
