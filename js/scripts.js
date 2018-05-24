@@ -3,7 +3,11 @@ $(function () {
     // page is now ready, initialize the calendar...
 
     $('#calendar').fullCalendar({
-        // put your options and callbacks here
+        googleCalendarApiKey: 'AIzaSyCMVvHVZIaSlpzCxQ14z_6E28CTPnH5sJg',
+        events: {
+            googleCalendarId: 'en.lithuanian#holiday@group.v.calendar.google.com',
+            className: 'gcal-event'
+        },
         defaultView: 'month',
         height: 752,
         contentHeight: 702,
