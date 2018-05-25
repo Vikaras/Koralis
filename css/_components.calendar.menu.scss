@@ -1,7 +1,5 @@
 .four-fifths {
-  //width: 1384px;
   background: $main-color;
-  //height: 900px;
 
   .calendar-wrap {
     margin: 40px 0 16px;
@@ -9,7 +7,7 @@
     .calendar-menu-wrap {
       display: flex;
 
-      .calendar-heading {
+      #calendar-heading {
         width: 435px;
         margin: 4px 0 33px;
         padding-left: 17px;
@@ -30,7 +28,6 @@
           .calendar-list-item {
             display: inline-block;
 
-
             .calendar-list-link {
               display: block;
               border-radius: 28px;
@@ -45,9 +42,9 @@
                 color: #ffffff;
                 background: #ffe53b;
                 background: -moz-linear-gradient(left, #ffe53b 0%, #f3333e 100%);
-                background: -webkit-linear-gradient(left, #ffe53b 0%,#f3333e 100%);
-                background: linear-gradient(to right, #ffe53b 0%,#f3333e 100%);
-                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffe53b', endColorstr='#f3333e',GradientType=1 );
+                background: -webkit-linear-gradient(left, #ffe53b 0%, #f3333e 100%);
+                background: linear-gradient(to right, #ffe53b 0%, #f3333e 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe53b', endColorstr='#f3333e', GradientType=1);
               }
 
             }

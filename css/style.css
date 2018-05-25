@@ -92,7 +92,7 @@ button {
   border-bottom: 1px solid #eaebf0; }
   #header-nav .logo-wrap {
     width: 112px; }
-    #header-nav .logo-wrap .logo-link {
+    #header-nav .logo-wrap #logo-link {
       display: block;
       margin: 12px 21px 7px 19px;
       padding: 20px; }
@@ -104,10 +104,10 @@ button {
       width: 473px;
       margin: 13px 0 5px;
       padding-left: 40px; }
-      #header-nav .nav-wrap .nav-search .nav-search-form .nav-search-icon {
+      #header-nav .nav-wrap .nav-search #nav-search-form #nav-search-icon {
         font-size: 27px;
         color: #c5c5da; }
-      #header-nav .nav-wrap .nav-search .nav-search-form #nav-search {
+      #header-nav .nav-wrap .nav-search #nav-search-form #nav-search {
         line-height: 24px;
         font-size: 16px;
         color: #aab8c7;
@@ -166,7 +166,7 @@ button {
           #header-nav .nav-wrap .nav-actions .nav-actions-list .nav-actions-list-item .nav-actions-list-link {
             display: block;
             padding: 20px; }
-      #header-nav .nav-wrap .nav-actions .notify-light {
+      #header-nav .nav-wrap .nav-actions #notify-light {
         position: absolute;
         width: 26px;
         height: 26px;
@@ -175,7 +175,8 @@ button {
         border: 3px solid #ffffff;
         top: 9px;
         right: 9px; }
-        #header-nav .nav-wrap .nav-actions .notify-light .notify-count {
+        #header-nav .nav-wrap .nav-actions #notify-light #notify-count {
+          display: block;
           text-align: center;
           line-height: 20px;
           font-size: 12px;
@@ -188,17 +189,19 @@ button {
       margin-top: 26px;
       padding: 0 20px 0 48px; }
       #header-nav .nav-user-wrap .nav-user-details .nav-user-name {
+        display: block;
         line-height: 24px;
         font-size: 16px;
         color: #000000; }
       #header-nav .nav-user-wrap .nav-user-details .nav-user-status {
         position: relative; }
         #header-nav .nav-user-wrap .nav-user-details .nav-user-status .status-text {
+          display: block;
           line-height: 21px;
           font-size: 14px;
           color: #a9b7c6;
           text-align: right; }
-        #header-nav .nav-user-wrap .nav-user-details .nav-user-status .status-light {
+        #header-nav .nav-user-wrap .nav-user-details .nav-user-status #status-light {
           position: absolute;
           width: 8px;
           height: 8px;
@@ -219,7 +222,7 @@ button {
     margin: 40px 0 16px; }
     .four-fifths .calendar-wrap .calendar-menu-wrap {
       display: flex; }
-      .four-fifths .calendar-wrap .calendar-menu-wrap .calendar-heading {
+      .four-fifths .calendar-wrap .calendar-menu-wrap #calendar-heading {
         width: 435px;
         margin: 4px 0 33px;
         padding-left: 17px;
@@ -249,7 +252,7 @@ button {
                 background: -moz-linear-gradient(left, #ffe53b 0%, #f3333e 100%);
                 background: -webkit-linear-gradient(left, #ffe53b 0%, #f3333e 100%);
                 background: linear-gradient(to right, #ffe53b 0%, #f3333e 100%);
-                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffe53b', endColorstr='#f3333e',GradientType=1 ); }
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe53b', endColorstr='#f3333e', GradientType=1); }
             .four-fifths .calendar-wrap .calendar-menu-wrap .calendar-menu .calendar-list .calendar-list-item:nth-child(1) .calendar-list-link {
               padding: 12px 35px 9px 42px; }
             .four-fifths .calendar-wrap .calendar-menu-wrap .calendar-menu .calendar-list .calendar-list-item:nth-child(2) .calendar-list-link {
@@ -300,11 +303,11 @@ button {
         #calendar .fc-toolbar .fc-left .fc-button-group .fc-agendaWeek-button:first-child {
           margin-right: 5px; }
       #calendar .fc-toolbar .fc-left .fc-button-group .active-btn-color {
-        color: #dcdce7;
-        font-size: 18px; }
+        font-size: 18px;
+        color: #dcdce7; }
       #calendar .fc-toolbar .fc-left .fc-button-group .passive-btn-color {
-        color: #222222;
-        font-size: 18px; }
+        font-size: 18px;
+        color: #222222; }
     #calendar .fc-toolbar .fc-center {
       height: 34px;
       margin: 11px 0 3px; }
@@ -353,6 +356,7 @@ button {
   #calendar .fc-event-container .gcal-event {
     margin: 0;
     padding: 0;
+    border: unset;
     border-radius: unset; }
     #calendar .fc-event-container .gcal-event .fc-content .fc-title {
       font-size: 17px; }
@@ -373,9 +377,9 @@ button {
   background: -moz-linear-gradient(top, #ededf6 0%, #f8f9fb 389px);
   background: -webkit-linear-gradient(top, #ededf6 0%, #f8f9fb 389px);
   background: linear-gradient(to bottom, #ededf6 0%, #f8f9fb 389px);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededf6', endColorstr='#f8f9fb',GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededf6', endColorstr='#f8f9fb', GradientType=0);
   padding: 17px 0 21px; }
-  .one-fifth .sidebar-heading {
+  .one-fifth #sidebar-heading {
     padding-left: 20px;
     margin-bottom: 4px;
     line-height: 24px; }
@@ -383,7 +387,7 @@ button {
     margin: 0 24px 26px 16px;
     background: #ffffff;
     border-radius: 3px; }
-    .one-fifth #sidebar #sidebar-search-form-wrap #sidebar-search-form .sidebar-search-icon {
+    .one-fifth #sidebar #sidebar-search-form-wrap #sidebar-search-form #sidebar-search-icon {
       font-size: 14px;
       line-height: 14px;
       color: #c5c5da;

@@ -10,7 +10,7 @@
   .logo-wrap {
     width: 112px;
 
-    .logo-link {
+    #logo-link {
       display: block;
       margin: 12px 21px 7px 19px;
       padding: 20px;
@@ -27,9 +27,9 @@
       margin: 13px 0 5px;
       padding-left: 40px;
 
-      .nav-search-form {
+      #nav-search-form {
 
-        .nav-search-icon {
+        #nav-search-icon {
           font-size: 27px;
           color: #c5c5da;
         }
@@ -121,7 +121,7 @@
         }
       }
 
-      .notify-light {
+      #notify-light {
         position: absolute;
         width: 26px;
         height: 26px;
@@ -131,7 +131,8 @@
         top: 9px;
         right: 9px;
 
-        .notify-count {
+        #notify-count {
+          display: block;
           text-align: center;
           line-height: 20px;
           font-size: 12px;
@@ -151,6 +152,7 @@
       padding: 0 20px 0 48px;
 
       .nav-user-name {
+        display: block;
         line-height: 24px;
         font-size: $text-size;
         color: #000000;
@@ -160,13 +162,14 @@
         position: relative;
 
         .status-text {
+          display: block;
           line-height: 21px;
           font-size: $text-size-small;
           color: #a9b7c6;
           text-align: right;
         }
 
-        .status-light {
+        #status-light {
           position: absolute;
           width: 8px;
           height: 8px;

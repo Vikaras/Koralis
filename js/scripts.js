@@ -30,8 +30,8 @@ $(function () {
             }
     })
 
-    $(".fc-month-button").html('<i class="fas fa-th active-btn-color"></i>')
-    $(".fc-agendaWeek-button").html('<i class="fas fa-bars passive-btn-color"></i>')
+    $(".fc-month-button").html('<span class="oi active-btn-color" data-glyph="grid-three-up"></span>')
+    $(".fc-agendaWeek-button").html('<span class="oi passive-btn-color" data-glyph="menu"></span>')
     $(".fc-prev-button").html('<i class="fas fa-chevron-left"></i>')
     $(".fc-next-button").html('<i class="fas fa-chevron-right"></i>')
 
@@ -42,13 +42,13 @@ $(function () {
     // });
 
     $(".fc-agendaWeek-button").on('click',function () {
-        $(this).find('i').removeClass('passive-btn-color').addClass('active-btn-color')
-        $(".fc-month-button").find('i').removeClass('active-btn-color').addClass('passive-btn-color')
+        $(this).find('span').removeClass('passive-btn-color').addClass('active-btn-color')
+        $(".fc-month-button").find('span').removeClass('active-btn-color').addClass('passive-btn-color')
     })
 
     $(".fc-month-button").on('click',function () {
-        $(this).find('i').removeClass('passive-btn-color').addClass('active-btn-color')
-        $(".fc-agendaWeek-button").find('i').removeClass('active-btn-color').addClass('passive-btn-color')
+        $(this).find('span').removeClass('passive-btn-color').addClass('active-btn-color')
+        $(".fc-agendaWeek-button").find('span').removeClass('active-btn-color').addClass('passive-btn-color')
     })
 
 

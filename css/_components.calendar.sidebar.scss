@@ -2,12 +2,12 @@
   width: 345px;
   background: #ededf6;
   background: -moz-linear-gradient(top, #ededf6 0%, #f8f9fb 389px);
-  background: -webkit-linear-gradient(top, #ededf6 0%,#f8f9fb 389px);
-  background: linear-gradient(to bottom, #ededf6 0%,#f8f9fb 389px);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededf6', endColorstr='#f8f9fb',GradientType=0 );
+  background: -webkit-linear-gradient(top, #ededf6 0%, #f8f9fb 389px);
+  background: linear-gradient(to bottom, #ededf6 0%, #f8f9fb 389px);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededf6', endColorstr='#f8f9fb', GradientType=0);
   padding: 17px 0 21px;
 
-  .sidebar-heading {
+  #sidebar-heading {
     padding-left: 20px;
     margin-bottom: 4px;
     line-height: 24px;
@@ -22,7 +22,7 @@
 
       #sidebar-search-form {
 
-        .sidebar-search-icon {
+        #sidebar-search-icon {
           font-size: 14px;
           line-height: 14px;
           color: #c5c5da;
@@ -62,7 +62,6 @@
             .sidebar-img-wrap {
               position: relative;
               margin-top: 2px;
-
 
               .sidebar-user-status {
                 position: absolute;

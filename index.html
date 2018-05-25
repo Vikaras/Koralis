@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' href="fullcalendar/fullcalendar.css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic.css"
+          rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css"
           integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
     <title>Koralis</title>
@@ -13,12 +15,12 @@
 <div class="container">
     <header id="header-nav">
         <div class="logo-wrap">
-            <a href="https://www.koralis.lt/" class="logo-link"><img src="img/logo.png" alt="Company Logo"></a>
+            <a href="https://www.koralis.lt/" id="logo-link"><img src="img/logo.png" alt="Company Logo"></a>
         </div>
         <div class="nav-wrap">
             <div class="nav-search">
-                <form action="#" class="nav-search-form">
-                    <span class="fa fa-search nav-search-icon"></span><input type="text" placeholder="General search"
+                <form action="#" id="nav-search-form">
+                    <span id="nav-search-icon" class="fa fa-search"></span><input type="text" placeholder="General search"
                                                              id="nav-search">
                 </form>
             </div>
@@ -29,7 +31,7 @@
                     <li class="nav-list-item"><a href="#" class="nav-list-link">Dashboard</a></li>
                     <li class="nav-list-item"><a href="#" class="nav-list-link">Drive</a>
                         <div class="dropdown-drive">
-                            <button class="dropdown-btn"><i class="fas fa-caret-down dropdown-icon"></i></button>
+                            <button class="dropdown-btn"><span class="fas fa-caret-down dropdown-icon"></span></button>
                         </div>
                     </li>
                 </ul>
@@ -40,8 +42,8 @@
                         <a href="#" class="nav-actions-list-link"><img
                                 class="nav-actions-img" src="img/message.png" alt="Messages"></a>
                         <!--Notification is ready-->
-                        <div class="notify-light">
-                            <p class="notify-count">12</p>
+                        <div id="notify-light">
+                            <span id="notify-count">12</span>
                         </div>
                     </li>
                     <li class="nav-actions-list-item"><a href="#" class="nav-actions-list-link"><img
@@ -53,17 +55,17 @@
         </div>
         <div class="nav-user-wrap">
             <div class="nav-user-details">
-                <p class="nav-user-name">Darius Mikalauskas</p>
+                <span class="nav-user-name">Darius Mikalauskas</span>
                 <div class="nav-user-status nav-user-status-do-not-disturb">
-                    <p class="status-text">Do not disturb</p>
-                    <div class="status-light"></div>
+                    <span class="status-text">Do not disturb</span>
+                    <div id="status-light"></div>
                 </div>
             </div>
             <div class="nav-user-img">
                 <img src="img/nav-user.png" alt="User Image">
             </div>
             <div class="nav-user-drop">
-                <button class="dropdown-btn"><i class="fas fa-caret-down dropdown-icon"></i></button>
+                <button class="dropdown-btn"><span class="fas fa-caret-down dropdown-icon"></span></button>
             </div>
         </div>
     </header>
@@ -73,7 +75,7 @@
         <div class="four-fifths">
             <div class="calendar-wrap">
                 <div class="calendar-menu-wrap">
-                    <h2 class="calendar-heading">Calendar</h2>
+                    <h2 id="calendar-heading">Calendar</h2>
                     <div class="calendar-menu">
                         <ul class="calendar-list">
                             <li class="calendar-list-item"><a href="#" class="calendar-list-link">All</a></li>
@@ -90,11 +92,11 @@
             </div>
         </div>
         <div class="one-fifth">
-            <h4 class="sidebar-heading">Calendar activity</h4>
+            <h4 id="sidebar-heading">Calendar activity</h4>
             <div id="sidebar">
                 <div id="sidebar-search-form-wrap">
                     <form action="#" id="sidebar-search-form">
-                        <span class="fa fa-search sidebar-search-icon"></span><input type="text" placeholder="Search by person, date, action" id="sidebar-search">
+                        <span id="sidebar-search-icon" class="fa fa-search"></span><input type="text" placeholder="Search by person, date, action" id="sidebar-search">
                     </form>
                 </div>
                 <div id="events">
@@ -128,21 +130,6 @@
                                     </div>
                                 </div>
                             </li>
-                            <!--CONTENT TO SEE SCROLLBAR IN SIDEBAR-->
-                            <!--<li class="events-list-item">-->
-                                <!--<div class="sidebar-img-wrap">-->
-                                    <!--<img src="img/user1.png" alt="User Image" class="sidebar-user">-->
-                                    <!--<div class="sidebar-user-status"></div>-->
-                                <!--</div>-->
-                                <!--<div class="sidebar-events-info-wrap">-->
-                                    <!--<span class="sidebar-user-name">Eimantas Rudminas</span>-->
-                                    <!--<span class="events-details">Commented on "New Front-End position candidate" meet</span>-->
-                                    <!--<div class="events-time-wrap">-->
-                                        <!--<span class="far fa-clock sidebar-clock-icon"></span>-->
-                                        <!--<span class="events-time">May 4, Friday</span>-->
-                                    <!--</div>-->
-                                <!--</div>-->
-                            <!--</li>-->
                         </ul>
                     </div>
                     <div class="events-container">
