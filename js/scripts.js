@@ -21,6 +21,10 @@ $(function () {
                 center: 'prev,title,next',
                 right: ''
             },
+        buttonIcons : {
+            prev : 'fas fas fa-chevron-left',
+            next : 'fas fas fa-chevron-right'
+        },
         views:
             {
                 month:
@@ -32,9 +36,7 @@ $(function () {
 
     $(".fc-month-button").html('<span class="oi active-btn-color" data-glyph="grid-three-up"></span>')
     $(".fc-agendaWeek-button").html('<span class="oi passive-btn-color" data-glyph="menu"></span>')
-    $(".fc-prev-button").html('<i class="fas fa-chevron-left"></i>')
-    $(".fc-next-button").html('<i class="fas fa-chevron-right"></i>')
-
+1
     // $('.fc-day').on('mousein', function() {
     //     $(this).addClass('on-hover');
     // }).on('mouseout', function() {
