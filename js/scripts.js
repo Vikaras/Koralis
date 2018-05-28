@@ -10,6 +10,48 @@ $(function () {
             backgroundColor: '#f8f9fb',
             borderColor: '#f3333e'
         },
+        eventSources: [
+
+            // your event source
+            {
+                events: [ // put the array in the `events` property
+                    {
+                        title  : 'Call with Sam',
+                        start  : '2018-05-09T15:30:00'
+                    },
+                    {
+                        title  : 'Secodment',
+                        start  : '2018-05-11',
+                        end    : '2018-05-13'
+                    },
+                    {
+                        title  : 'Design review',
+                        start  : '2018-05-15T08:55:00'
+                    },
+                    {
+                        title  : 'QA',
+                        start  : '2018-05-15T16:10:00'
+                    },
+                    {
+                        title  : 'Vocation',
+                        start  : '2018-05-23',
+                        end    : '2018-05-26'
+                    },
+                    {
+                        title  : 'Call with Dave',
+                        start  : '2018-05-26T13:30:00',
+                    },
+                    {
+                        title  : 'Meet with Dave',
+                        start  : '2018-05-28T17:00:00'
+                    }
+                ],
+                backgroundColor:'#ffe53b'
+                // color: 'black',     // an option!
+                // textColor: 'yellow' // an option!
+            }
+        ],
+
         defaultView: 'month',
         height: 752,
         contentHeight: 702,
