@@ -115,7 +115,7 @@
     .gcal-event {
       margin: 0;
       padding: 0;
-      border: unset;
+      //border: unset;
       border-radius: unset;
 
       .fc-content {
@@ -148,11 +148,4 @@
     padding-left: 24px;
     font-family: 'dinbold', sans-serif;
     font-size: 32px; }
-
 }
-//.on-hover {
-//  background: red;
-//  border-radius: 50%;
-//  color: #fff;
-//  transition: background-color 0.2s ease;
-//}

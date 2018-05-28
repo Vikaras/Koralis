@@ -355,7 +355,6 @@ button {
   #calendar .fc-event-container .gcal-event {
     margin: 0;
     padding: 0;
-    border: unset;
     border-radius: unset; }
     #calendar .fc-event-container .gcal-event .fc-content .fc-title {
       font-size: 17px; }

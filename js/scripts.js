@@ -14,10 +14,10 @@ $(function () {
         height: 752,
         contentHeight: 702,
         fixedWeekCount: false, //savaiciu kiekis
-        selectable: true,
-        selectHelper: true,
-        editable: true,
-        eventLimit: true,
+        // selectable: true,
+        // selectHelper: true,
+        // editable: true,
+        // eventLimit: true,
         header:
             {
                 left: 'month,agendaWeek',
@@ -36,6 +36,7 @@ $(function () {
                     }
             }
     });
+
 
     $(".fc-month-button").html('<span class="oi active-btn-color" data-glyph="grid-three-up"></span>')
     $(".fc-agendaWeek-button").html('<span class="oi passive-btn-color" data-glyph="menu"></span>')
