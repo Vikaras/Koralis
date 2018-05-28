@@ -1,5 +1,4 @@
 $(function () {
-
     // page is now ready, initialize the calendar...
 
     $('#calendar').fullCalendar({
@@ -15,6 +14,10 @@ $(function () {
         height: 752,
         contentHeight: 702,
         fixedWeekCount: false, //savaiciu kiekis
+        selectable: true,
+        selectHelper: true,
+        editable: true,
+        eventLimit: true,
         header:
             {
                 left: 'month,agendaWeek',
@@ -32,16 +35,10 @@ $(function () {
                         columnHeaderFormat: 'dddd'
                     }
             }
-    })
+    });
 
     $(".fc-month-button").html('<span class="oi active-btn-color" data-glyph="grid-three-up"></span>')
     $(".fc-agendaWeek-button").html('<span class="oi passive-btn-color" data-glyph="menu"></span>')
-1
-    // $('.fc-day').on('mousein', function() {
-    //     $(this).addClass('on-hover');
-    // }).on('mouseout', function() {
-    //     $(this).removeClass('on-hover');
-    // });
 
     $(".fc-agendaWeek-button").on('click',function () {
         $(this).find('span').removeClass('passive-btn-color').addClass('active-btn-color')
@@ -52,9 +49,6 @@ $(function () {
         $(this).find('span').removeClass('passive-btn-color').addClass('active-btn-color')
         $(".fc-agendaWeek-button").find('span').removeClass('active-btn-color').addClass('passive-btn-color')
     })
-
-
-
-
 });
+
 
