@@ -36,11 +36,11 @@ $(function () {
                     }
             }
     });
-
-
+    //Custom icons for next and prev
     $(".fc-month-button").html('<span class="oi active-btn-color" data-glyph="grid-three-up"></span>')
     $(".fc-agendaWeek-button").html('<span class="oi passive-btn-color" data-glyph="menu"></span>')
 
+    // View btn color change
     $(".fc-agendaWeek-button").on('click',function () {
         $(this).find('span').removeClass('passive-btn-color').addClass('active-btn-color')
         $(".fc-month-button").find('span').removeClass('active-btn-color').addClass('passive-btn-color')
@@ -50,6 +50,29 @@ $(function () {
         $(this).find('span').removeClass('passive-btn-color').addClass('active-btn-color')
         $(".fc-agendaWeek-button").find('span').removeClass('active-btn-color').addClass('passive-btn-color')
     })
+
+
+    //Hover on a cell
+    $(".fc-day-top").hover(function() {
+        var col = $(this).index();
+
+        $(this).closest('.fc-row').find('.fc-bg td:eq(' + col + ')').css('background', '#ffffff').css('box-shadow','0 2px 73px 0 #ccccdc');
+    }, function() {
+        var col = $(this).index();
+
+        $(this).closest('.fc-row').find('.fc-bg td:eq(' + col + ')').css('background', 'none').css('box-shadow','none');
+    });
+
+
+    $(".fc-day").hover(function() {
+        var col = $(this).index();
+
+        $(this).closest('.fc-row').find('.fc-bg td:eq(' + col + ')').css('background', '#ffffff').css('box-shadow','0 2px 73px 0 #ccccdc');
+    }, function() {
+        var col = $(this).index();
+
+        $(this).closest('.fc-row').find('.fc-bg td:eq(' + col + ')').css('background', 'none').css('box-shadow','none');
+    });
 });
 
 
