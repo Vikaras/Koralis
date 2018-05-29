@@ -54,12 +54,13 @@ $(function () {
 
         eventRender: function(event, element) {
             if(event.start.diff(event.end, 'days') <= 0) {
-                $(element).css("background-color","red")
+                $(element).addClass('multi-event')
+                $(element).find('span').addClass('multi-event-text')
             } else {
                 $(element).css("background-color","green")
             }
             // console.log(event.start.diff(event.end, 'days'))
-            // console.log(event, element);
+            console.log(event, element);
             // console.log(event.start);
             // console.log(event.end);
         },
