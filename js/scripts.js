@@ -12,30 +12,29 @@ $(function () {
         },
         eventSources: [
 
-            // your event source
             {
-                events: [ // put the array in the `events` property
+                events: [
                     {
                         title  : 'Call with Sam',
-                        start  : '2018-05-09T15:30:00'
+                        start  : '2018-05-09T15:30:00',
                     },
                     {
                         title  : 'Secodment',
                         start  : '2018-05-11',
-                        end    : '2018-05-13'
+                        end    : '2018-05-13',
                     },
                     {
                         title  : 'Design review',
-                        start  : '2018-05-15T08:55:00'
+                        start  : '2018-05-15T08:55:00',
                     },
                     {
                         title  : 'QA',
-                        start  : '2018-05-15T16:10:00'
+                        start  : '2018-05-15T16:10:00',
                     },
                     {
                         title  : 'Vocation',
                         start  : '2018-05-23',
-                        end    : '2018-05-26'
+                        end    : '2018-05-26',
                     },
                     {
                         title  : 'Call with Dave',
@@ -43,14 +42,27 @@ $(function () {
                     },
                     {
                         title  : 'Meet with Dave',
-                        start  : '2018-05-28T17:00:00'
+                        start  : '2018-05-28T17:00:00',
                     }
                 ],
-                backgroundColor:'#ffe53b'
+
+                // backgroundColor:'#ffe53b'
                 // color: 'black',     // an option!
                 // textColor: 'yellow' // an option!
             }
         ],
+
+        eventRender: function(event, element) {
+            if(event.start.diff(event.end, 'days') <= 0) {
+                $(element).css("background-color","red")
+            } else {
+                $(element).css("background-color","green")
+            }
+            // console.log(event.start.diff(event.end, 'days'))
+            // console.log(event, element);
+            // console.log(event.start);
+            // console.log(event.end);
+        },
 
         defaultView: 'month',
         height: 752,
@@ -116,5 +128,4 @@ $(function () {
         $(this).closest('.fc-row').find('.fc-bg td:eq(' + col + ')').css('background', 'none').css('box-shadow','none');
     });
 });
-
 
