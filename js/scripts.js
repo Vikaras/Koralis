@@ -16,7 +16,7 @@ $(function () {
                 events: [
                     {
                         title  : 'Call with Sam',
-                        start  : '2018-05-09T15:30:00',
+                        start  : '2018-05-09T15:15:00',
                     },
                     {
                         title  : 'Secodment',
@@ -53,11 +53,16 @@ $(function () {
         ],
 
         eventRender: function(event, element) {
-            if(event.start.diff(event.end, 'days') <= 0) {
-                $(element).addClass('multi-event')
-                $(element).find('span').addClass('multi-event-text')
+            var title = event.title
+            var time = moment(event.start).format('hh:mm a')
+            if(event.start.diff(event.end, 'days') < -1) {
+                element.addClass('multi-event')
+                element.find('span').addClass('multi-event-text')
             } else {
-                $(element).css("background-color","green")
+                element.html("<div class='calendar-event-wrap>'"+ "<div class='calendar-event-light'></div>"+
+                  "<span class='calendar-event-name'>" + title + "</span>" +
+                    "<div class='calendar-event-time-wrap'>" + "<span class='far fa-clock calendar-event-clock'></span>" +
+                    "<span class='calendar-event-time'>" + time + "</span>" +"</div>"+ "</div>")
             }
             // console.log(event.start.diff(event.end, 'days'))
             console.log(event, element);
