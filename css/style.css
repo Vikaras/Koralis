@@ -356,12 +356,6 @@ button {
     margin: 0;
     padding: 0;
     border: unset; }
-  #calendar .fc-event-container .gcal-event {
-    margin: 0;
-    padding: 0;
-    border-radius: unset; }
-    #calendar .fc-event-container .gcal-event .fc-content .fc-title {
-      font-size: 17px; }
   #calendar.fc-unthemed th, #calendar.fc-unthemed td, #calendar.fc-unthemed thead, #calendar.fc-unthemed tbody, #calendar.fc-unthemed .fc-divider, #calendar.fc-unthemed .fc-row, #calendar.fc-unthemed .fc-content, #calendar.fc-unthemed .fc-popover, #calendar.fc-unthemed .fc-list-view, #calendar.fc-unthemed .fc-list-heading td {
     border-color: #eaebf0; }
   #calendar.fc-unthemed td.fc-today {
@@ -376,24 +370,26 @@ button {
     border-radius: 15px;
     border: unset;
     margin: 0;
-    padding: 0;
+    padding: 0 30px 0 18px;
     background: -moz-linear-gradient(left, #ffe53b 0%, #f3333e 100%);
     background: -webkit-linear-gradient(left, #ffe53b 0%, #f3333e 100%);
     background: linear-gradient(to right, #ffe53b 0%, #f3333e 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe53b', endColorstr='#f3333e', GradientType=1); }
-  #calendar .multi-event-text {
-    display: block;
-    height: 20px;
-    line-height: 20px;
-    font-size: 14px;
-    font-weight: 700;
-    color: #fff;
-    margin: 5px 0;
-    padding-left: 20px; }
+    #calendar .multi-event .multi-event-text {
+      display: block;
+      height: 20px;
+      line-height: 20px;
+      font-size: 14px;
+      font-weight: 700;
+      color: #fff;
+      margin: 5px 0;
+      padding-left: 20px; }
   #calendar .single-event {
     position: absolute;
     top: 36px;
     left: 63px; }
+  #calendar .google-event .google-event-text {
+    font-size: 17px; }
   #calendar .calendar-event-wrap {
     position: relative;
     background-color: #f8f9fb; }

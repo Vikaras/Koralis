@@ -5,7 +5,6 @@ $(function () {
         googleCalendarApiKey: 'AIzaSyCMVvHVZIaSlpzCxQ14z_6E28CTPnH5sJg',
         events: {
             googleCalendarId: 'en.lithuanian#holiday@group.v.calendar.google.com',
-            className: 'gcal-event',
             textColor: '#f3333e',
             backgroundColor: '#f8f9fb',
             borderColor: '#f3333e'
@@ -58,6 +57,10 @@ $(function () {
             if(event.start.diff(event.end, 'days') < -1) {
                 element.addClass('multi-event')
                 element.find('span').addClass('multi-event-text')
+            } else if(event.start.diff(event.end, 'days') === -1) {
+                element.addClass('google-event')
+                element.find('span').addClass('google-event-text')
+
             } else {
                 element.html("<div class='calendar-event-wrap'>"+ "<div class='calendar-event-light'></div>"+
                   "<span class='calendar-event-name'>" + title + "</span>" +
@@ -66,14 +69,10 @@ $(function () {
             }
 
             // console.log(event.start.diff(event.end, 'days'))
-            console.log(event, element);
+            // console.log(event, element);
             // console.log(event.start);
             // console.log(event.end);
         },
-
-        // dayRender: function (date, cell) {
-        //     cell.css("position","relative");
-        // },
 
         defaultView: 'month',
         height: 752,
