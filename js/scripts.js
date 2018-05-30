@@ -54,12 +54,13 @@ $(function () {
 
         eventRender: function(event, element) {
             var title = event.title
-            var time = moment(event.start).format('hh:mm a')
+            var time = moment(event.start).format('h:mm a')
             if(event.start.diff(event.end, 'days') < -1) {
                 element.addClass('multi-event')
                 element.find('span').addClass('multi-event-text')
             } else {
-                element.html("<div class='calendar-event-wrap>'"+ "<div class='calendar-event-light'></div>"+
+                // $('.fc-event-container').addClass('single-event')
+                element.html("<div class='calendar-event-wrap'>"+ "<div class='calendar-event-light'></div>"+
                   "<span class='calendar-event-name'>" + title + "</span>" +
                     "<div class='calendar-event-time-wrap'>" + "<span class='far fa-clock calendar-event-clock'></span>" +
                     "<span class='calendar-event-time'>" + time + "</span>" +"</div>"+ "</div>")
@@ -73,11 +74,7 @@ $(function () {
         defaultView: 'month',
         height: 752,
         contentHeight: 702,
-        fixedWeekCount: false, //savaiciu kiekis
-        // selectable: true,
-        // selectHelper: true,
-        // editable: true,
-        // eventLimit: true,
+        fixedWeekCount: false,
         header:
             {
                 left: 'month,agendaWeek',

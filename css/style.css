@@ -352,6 +352,10 @@ button {
     #calendar .fc-view-container .fc-day-top.fc-other-month {
       opacity: 1;
       color: #c5c5da; }
+  #calendar .fc-event-container .fc-event {
+    margin: 0;
+    padding: 0;
+    border: unset; }
   #calendar .fc-event-container .gcal-event {
     margin: 0;
     padding: 0;
@@ -386,6 +390,39 @@ button {
     color: #fff;
     margin: 5px 0;
     padding-left: 20px; }
+  #calendar .calendar-event-wrap {
+    position: relative;
+    background-color: #f8f9fb; }
+    #calendar .calendar-event-wrap .calendar-event-light {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #7cd500;
+      position: absolute;
+      top: 5px;
+      left: 0; }
+    #calendar .calendar-event-wrap .calendar-event-name {
+      display: block;
+      padding-left: 15px;
+      height: 21px;
+      line-height: 21px;
+      font-size: 14px;
+      color: #576b8a; }
+    #calendar .calendar-event-wrap .calendar-event-time-wrap {
+      position: relative; }
+      #calendar .calendar-event-wrap .calendar-event-time-wrap .calendar-event-clock {
+        position: absolute;
+        top: 0;
+        left: 15px;
+        font-size: 12px;
+        color: #c5c5da; }
+      #calendar .calendar-event-wrap .calendar-event-time-wrap .calendar-event-time {
+        display: block;
+        padding-left: 30px;
+        height: 21px;
+        line-height: 21px;
+        font-size: 14px;
+        color: #afbdd2; }
 
 .one-fifth {
   width: 345px;
