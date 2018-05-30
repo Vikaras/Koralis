@@ -59,17 +59,21 @@ $(function () {
                 element.addClass('multi-event')
                 element.find('span').addClass('multi-event-text')
             } else {
-                // $('.fc-event-container').addClass('single-event')
                 element.html("<div class='calendar-event-wrap'>"+ "<div class='calendar-event-light'></div>"+
                   "<span class='calendar-event-name'>" + title + "</span>" +
                     "<div class='calendar-event-time-wrap'>" + "<span class='far fa-clock calendar-event-clock'></span>" +
                     "<span class='calendar-event-time'>" + time + "</span>" +"</div>"+ "</div>")
             }
+
             // console.log(event.start.diff(event.end, 'days'))
             console.log(event, element);
             // console.log(event.start);
             // console.log(event.end);
         },
+
+        // dayRender: function (date, cell) {
+        //     cell.css("position","relative");
+        // },
 
         defaultView: 'month',
         height: 752,
