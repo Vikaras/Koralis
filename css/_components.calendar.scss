@@ -76,20 +76,20 @@
 
   .fc-view-container {
 
-      .fc-day-header {
-        height: 37px;
-        text-align: left;
+    .fc-day-header {
+      height: 37px;
+      text-align: left;
 
-        & span {
-          display: block;
-          height: 21px;
-          margin: 9px 0 7px;
-          padding-left: 30px;
-          font-size: $text-size-small;
-          font-weight: 500;
-          color: #506584;
-        }
+      & span {
+        display: block;
+        height: 21px;
+        margin: 9px 0 7px;
+        padding-left: 30px;
+        font-size: $text-size-small;
+        font-weight: 500;
+        color: #506584;
       }
+    }
 
     .fc-day-top {
       height: 57px;
@@ -103,7 +103,7 @@
         font-size: 23px;
       }
 
-        &.fc-other-month{
+      &.fc-other-month {
         opacity: 1;
         color: #c5c5da;
       }
@@ -129,17 +129,20 @@
   &.fc-unthemed .fc-popover,
   &.fc-unthemed .fc-list-view,
   &.fc-unthemed .fc-list-heading td {
-    border-color: #eaebf0; }
+    border-color: #eaebf0;
+  }
 
   &.fc-unthemed td.fc-today {
-    background: #ececf6 !important; }
+    background: #ececf6 !important;
+  }
 
   &.fc-unthemed td.fc-today .fc-day-number {
     height: 43px;
     margin-top: 15px;
     padding-left: 24px;
     font-family: 'dinbold', sans-serif;
-    font-size: 32px; }
+    font-size: 32px;
+  }
 
   .multi-event {
     border-radius: 15px;
@@ -161,12 +164,6 @@
       margin: 5px 0;
       padding-left: 20px;
     }
-  }
-
-  .single-event {
-    position: absolute;
-    top: 36px;
-    left: 63px;
   }
 
   .google-event {

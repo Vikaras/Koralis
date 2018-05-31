@@ -44,10 +44,6 @@ $(function () {
                         start  : '2018-05-28T17:00:00',
                     }
                 ],
-
-                // backgroundColor:'#ffe53b'
-                // color: 'black',     // an option!
-                // textColor: 'yellow' // an option!
             }
         ],
 
@@ -67,11 +63,6 @@ $(function () {
                     "<div class='calendar-event-time-wrap'>" + "<span class='far fa-clock calendar-event-clock'></span>" +
                     "<span class='calendar-event-time'>" + time + "</span>" +"</div>"+ "</div>")
             }
-
-            // console.log(event.start.diff(event.end, 'days'))
-            // console.log(event, element);
-            // console.log(event.start);
-            // console.log(event.end);
         },
 
         defaultView: 'month',
@@ -96,6 +87,7 @@ $(function () {
                     }
             }
     });
+
     //Custom icons for next and prev
     $(".fc-month-button").html('<span class="oi active-btn-color" data-glyph="grid-three-up"></span>')
     $(".fc-agendaWeek-button").html('<span class="oi passive-btn-color" data-glyph="menu"></span>')
